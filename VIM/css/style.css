@@ -38,7 +38,7 @@
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
+    padding-left: 1rem;
 }
 
 .nav div.logo a {
@@ -102,13 +102,13 @@
 
 /* Media qurey section */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 992px) and (max-width: 1024px) {
     .container {
         margin: 0;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
     .navTrigger {
         display: block;
     }
@@ -428,15 +428,46 @@ header {
     text-shadow: 0px 0px 20px white;
   }
 
+  .flex-centro-100100{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 
+.a-hover-none:hover{
+    text-decoration: none;
+}
 
 
 
 
   .custom-footer-1{
-    background-image: linear-gradient(to top, #131580, #245fceee);
+    background-image: linear-gradient(to bottom, #019833, #005d04);
   }
   
   .custom-version-bar{
-    background-image: linear-gradient(to left, #a928ff, #3b1663, #a928ff);
+    background-image: linear-gradient(to left, #53ff28, #32c71f, #53ff28);
   }
+
+
+  /* scrollbar */
+  ::-webkit-scrollbar{
+      width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #666666; 
+    border-radius: 10px;
+  }
+  
+  /*
+  #progressbar{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 10px;
+      border-radius: 10px;
+      background-color: #666666;
+      z-index: 9;
+  }
+  */
