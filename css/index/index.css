@@ -21,6 +21,7 @@ body {
   font-family: var(--font-primary);
   line-height: 1.6;
   background-color: #FFF;
+  -webkit-font-smoothing: antialiased;
 }
 
 .page-title {
@@ -138,14 +139,43 @@ body {
 }
 
 #projects{
-  background: linear-gradient(235deg, #FFFFFF 0%, #000F25 100%), linear-gradient(180deg, #6100FF 0%, #000000 100%), linear-gradient(235deg, #FFA3AC 0%, #FFA3AC 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #00C9B1 calc(70% + 1px), #00C9B1 100%), linear-gradient(125deg, #FFA3AC 0%, #FFA3AC 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #00C9B1 calc(70% + 1px), #00C9B1 100%);
-background-blend-mode: soft-light, screen, darken, normal;
-color: hsl(0, 0%, 95%);
+  background-image: url('../../img/elon_red.jpg');
+  color: hsl(0, 0%, 95%);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: cover;
+  text-shadow:
+    -2px 2px 0 #000,
+	  -3px 3px 0 #000,
+		-4px 4px 0 #000,
+		-5px 4px 0 #000,
+		0px 1px 1px rgba(0,0,0,.4),
+		0px 2px 2px rgba(0,0,0,.3),
+		-1px 3px 3px rgba(0,0,0,.2),
+		-1px 5px 5px rgba(0,0,0,.1),
+		-2px 8px 8px rgba(0,0,0,.1),
+		-2px 13px 13px rgba(0,0,0,.1);
 }
 
-.bgsun{
-  background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%); background-blend-mode: normal, normal, screen, overlay, normal;
-  color: black;
+#aboutus{
+  background-image: url('../../img/elon_faces.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: cover;
+  color: hsl(0, 0%, 95%);
+  text-shadow:
+    -2px 2px 0 #000,
+	  -3px 3px 0 #000,
+		-4px 4px 0 #000,
+		-5px 4px 0 #000,
+		0px 1px 1px rgba(0,0,0,.4),
+		0px 2px 2px rgba(0,0,0,.3),
+		-1px 3px 3px rgba(0,0,0,.2),
+		-1px 5px 5px rgba(0,0,0,.1),
+		-2px 8px 8px rgba(0,0,0,.1),
+		-2px 13px 13px rgba(0,0,0,.1);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: 20px;
@@ -163,10 +193,10 @@ color: hsl(0, 0%, 95%);
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  background-color: #333333; /* dark bg shows the card glowing thing */ 
   -webkit-font-smoothing: antialiased;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  background-image: url('../../img/original-02.jpg');
 }
 
 .title {
@@ -177,7 +207,7 @@ color: hsl(0, 0%, 95%);
   text-align: center;
 }
 
-.schede-p {
+.card-p {
   line-height: 1.5em;
 }
 
@@ -185,7 +215,7 @@ h1 + p, p + p {
   margin-top: 10px;
 }
 
-.schede-container{
+.card-container{
   padding: 40px 80px;
   display: flex;
   flex-wrap: wrap;
@@ -289,16 +319,12 @@ h1 + p, p + p {
 
 
 
+
+
 /* font */
 .header h1{
   font-family: 'Tesla';
 }
-.sticky{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-.hide{
-  display: none;
+.opacity0{
+  opacity: 0;
 }

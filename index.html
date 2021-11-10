@@ -33,6 +33,23 @@
     <!-- AOS css -->
 	<link href="css/aos/aos.css" rel="stylesheet">
 
+  <meta name="description" content="Sala Musk Homepage">
+
+<!-- scroll debugging css 
+  <style>
+    #scroll {
+      height:40px;
+      position:fixed;
+	      width:100%;
+	      background:#fff;
+	      bottom:0;
+	      text-align:center;
+	      color:red;
+        z-index: 10000;
+      }
+  </style>
+-->
+
     </head>
     <body id="gototop">
       <!-- scrollbar with progress
@@ -53,7 +70,7 @@
     <nav class="nav">
         <div class="container">
             <div class="logo">
-              <a href="http://salamusk.epizy.com/"><img src="img/sala-musk-logo.png" alt="logo" height="45px"></a>
+              <a href="http://salamusk.onrender.com/"><img src="img/sala-musk-logo.png" alt="logo" height="45px"></a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
@@ -72,79 +89,69 @@
     
 
 
-<!-- try parallax for dividers -->
+
 
 <div class="header" id="projects">
   <h1 class="projectstext">OUR PROJECTS</h1>
 </div>
 
 
-
-<div id="app" class="schede-container">
+<!-- https://codepen.io/andymerskin/pen/XNMWvQ -->
+<div id="app" class="card-container">
   <a href="VIM/index.html">
   <card data-image="img/vim-terminal.png">
     <h1 slot="header">VIM</h1>
-    <p class="schede-p" slot="content">VIM explanation and tutorials.</p>
+    <p class="card-p" slot="content">VIM explanation and tutorials.</p>
   </card>
   </a>
 </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
   <script src="css/index/card/card.js"></script>
-
+<!-- OLD METHOD TO HIDE #APP - IT'S BUGGY
 <script>
-  (function($){
-    /* Store the original positions */
-    var d1 = $('.schede-container');
-    var d1orgtop = d1.position().top;
-    
-    /* respond to the scroll event */
-    $(window).scroll(function(){
-        /* get the current scroll position */
-        var st = $(window).scrollTop();
+document.addEventListener('scroll', function(){
 
-        /* change classes based on section positions */
-        if (st >= d1orgtop) {
-            d1.addClass('sticky');
-        } else {
-            d1.removeClass('sticky');
-        }
-    });
+    var h = document.documentElement, 
+        b = document.body,
+        st = 'scrollTop',
+        sh = 'scrollHeight';
 
-  })(window.jQuery);
-</script>
-<!-- it doesn't stick if there are >4 cards idk why i'll figure out when there will be >4 cards needed -->
-<script>
-$(window).scroll(function() {
-    if ($(this).scrollTop()>1500)
+    var percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+
+    if (percent>22)
      {
-        $('.schede-container').hide();
+        $('.card-container').hide();
      }
     else
      {
-        $('.schede-container').show();
+        $('.card-container').show();
      }
- });
+	
+    /* document.getElementById('scroll').textContent = 'scrolled: ' + percent + '%'; */
+});
 </script>
-<!-- failed attempt to change scrollbar border-radius when reached the bottom. JS you won the battle, but not the war.
+ for scroll debugging
+<div id="scroll">Scroll to see percentage</div>
+-->
+
+<!-- hide app when scrolled past aboutus div -->
 <script>
-$(window).scroll(function() {
-  if($(window).scrollTop() + $(window).height() == $(document).height()) {
-    
+  window.addEventListener("scroll", function() {
+  var elementTarget = document.getElementById("aboutus");
+  if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+    $('.card-container').addClass('opacity0');
+  }else{
+    $('.card-container').removeClass('opacity0');
   }
 });
 </script>
--->
-
-
-
-
 
 
 
 <!-- https://codepen.io/hexagoncircle/pen/JjRYaZw -->
 
-<header class="header bgsun" id="aboutus"> 
+<header class="header" id="aboutus"> 
   <h1>ABOUT US</h1>
 </header>
 
@@ -247,7 +254,7 @@ $(window).scroll(function() {
       <section class="mb-4">
         <div class="row">
           <div class="col-lg-6">
-            <a href="http://salamusk.epizy.com"><img src="img/sala-musk-logo.png" class="img-fluid"></a>
+            <a href="http://salamusk.onrender.com"><img src="img/sala-musk-logo.png" class="img-fluid"></a>
           </div>
           <div class="col-lg-6">
             <div class="flex-centro-100100">
@@ -312,5 +319,15 @@ $(window).scroll(function() {
         });
     
         </script>
+
+        <!-- failed attempt to change scrollbar border-radius when reached the bottom. JS you won the battle, but not the war.
+        <script>
+          $(window).scroll(function() {
+            if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    
+            }
+        });
+        </script>
+        -->
       </body>
   </html>
