@@ -370,7 +370,23 @@
 }
 
 
+    .flex-centro-100100{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    }
 
+    .flex-centro-100vh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-shadow: 0px 0px 20px white;
+    }
+
+  
 
   .custom-footer-1{
     background-image: linear-gradient(to bottom, #019833, #005d04);
