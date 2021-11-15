@@ -53,6 +53,7 @@
                   <li><a href="resources"><span class="scorrimentofigo">Resources</span></a></li>
                   <li><a href="../index#aboutus"><span class="scorrimentofigo">About Us</span></a></li>
                   <li class="font-weight-lighter"><a href="it/resources"><img src="img/bandiera-it.png" alt="" height="30%"> <small>IT</small></a></li>
+                  <li><button class="dark-mode-btn" id="dm-id" onclick="DarkMode()">Dark Theme</button></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -64,24 +65,26 @@
     </nav>
 
 
+    <div id="no-mobile">
+
     <table id="tabella-bottone" align="left">
       <tr>
         <td align="center" class="titoletti" onmouseover="spostatesto()" onmouseout="spostatesti()">Presentazione</td>
       </tr>
       <tr>
-        <td align="center"><a href="downlodable/Esposizione.pptx" download="esposizione"><button class="bottoni-download">Download</button></a></td>
+        <td align="center"><a href="downlodable/Esposizione.pptx" download="esposizione"><button class="bottoni-download" onmouseover="spostatesto()" onmouseout="spostatesti()">Download</button></a></td>
       </tr>
       <tr>
         <td align="center" class="titoletti" onmouseover="spostatesto2()" onmouseout="spostatesti2()">Palindromo</td>
       </tr>
       <tr>
-        <td align="center" ><a href="downlodable/palindrome.pdf" download="palindromo"><button class="bottoni-download">Download</button></a></td>
+        <td align="center" ><a href="downlodable/palindrome.pdf" download="palindromo"><button class="bottoni-download" onmouseover="spostatesto2()" onmouseout="spostatesti2()">Download</button></a></td>
       </tr>
       <tr>
         <td align="center" class="titoletti" onmouseover="spostatesto3()" onmouseout="spostatesti3()">Documentazione</td>
       </tr>
       <tr>
-        <td align="center"><a href="downlodable/Docs.docx" download="documentazione"><button class="bottoni-download">Download</button></a></td>
+        <td align="center"><a href="downlodable/Docs.docx" download="documentazione"><button class="bottoni-download" onmouseover="spostatesto3()" onmouseout="spostatesti3()">Download</button></a></td>
       </tr>
     </table>
 
@@ -91,6 +94,44 @@
 
     <div style="height: 1000px;">
     </div>
+
+    </div>
+
+    <div id="no-desktop">
+
+        <div class="dl-divider">
+          <h1 class="title1">Download the resources</h1>
+        </div>
+
+        <div class="dl-divider" style="margin-top: 10px;">
+          <h1 class="p-2" style="text-shadow:-1px 1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;">Documentation</h1>
+          <p>Our documents about VIM (long but it has what you need).</p>
+          <div class="p-3">
+            <a href="" download="SalaMusk-VIM_Documentation" class="mobile-bottoni-download p-2 px-5">Download</a>
+          </div>
+        </div>
+
+        <div class="dl-divider" style="margin-top: 10px;">
+          <h1 class="p-2" style="text-shadow:-1px 1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;">Presentation</h1>
+          <p>Our presentation about VIM (just the essential informations but definitely prettier than the documentation).</p>
+          <div class="p-3">
+            <a href="" download="SalaMusk-VIM_Presentation" class="mobile-bottoni-download p-2 px-5">Download</a>
+          </div>
+        </div>
+
+        <div class="dl-divider" style="margin-top: 10px;">
+          <h1 class="p-2">Banena</h1>
+        </div>
+        <div class="dl-divider" style="margin-top: 10px;">
+          <h1 style="text-shadow:-1px 1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;" class="p-2">Website files</h1>
+          <p>Yes, you can download the whole website.</p>
+          <div class="p-3">
+            <a href="" download="SalaMusk-VIM_Website" class="mobile-bottoni-download p-2 px-5">Download</a>
+          </div>
+        </div>
+
+    </div>
+    
 
 
 
@@ -184,13 +225,77 @@
   
       <!-- Jquery needed -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+      <!-- script to detect touch screen device -->
+      <script>
+        function touch() {
+            return ( 'ontouchstart' in window ) || 
+                   ( navigator.maxTouchPoints > 0 ) ||
+                   ( navigator.msMaxTouchPoints > 0 );
+        }
+      
+        if(touch()) {
+          var nomobile = document.getElementById('no-mobile');
+          nomobile.style.display = 'none';
+        }
+        else {
+          var nodesktop = document.getElementById('no-desktop');
+          nodesktop.style.display = 'none';
+        }
+      </script>
+
+      <!-- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#storing-preferences -->
+    <script>
+      // Select the button
+      const btn = document.querySelector(".dark-mode-btn");
+
+      // Select the theme preference from localStorage
+      const currentTheme = localStorage.getItem("theme");
+
+      // If the current theme in localStorage is "dark"...
+      if (currentTheme == "dark") {
+        // ...then use the .dark-theme class
+        $('#no-desktop').addClass('no-desktop-dark');
+        $(".custom-footer-1").addClass('custom-dark-footer-1');
+        $(".custom-version-bar").addClass('custom-dark-version-bar');
+        document.getElementById("dm-id").innerHTML = "Light Theme";
+      }
+
+      // Listen for a click on the button 
+      btn.addEventListener("click", function () {
+        // Toggle the .dark-theme class on each click
+        document.body.classList.toggle("dark-mode");
+        $("#no-desktop").toggleClass('no-desktop-dark');
+        $(".custom-footer-1").toggleClass('custom-dark-footer-1');
+        $(".custom-version-bar").toggleClass('custom-dark-version-bar');
+
+        // Let's say the theme is equal to light
+        let theme = "light";
+        // If the body contains the .dark-theme class...
+        if (document.body.classList.contains("dark-mode")) {
+          // ...then let's make the theme dark
+          theme = "dark";
+        }
+        // Then save the choice in localStorage
+        localStorage.setItem("theme", theme);
+      });
+
+
+      function DarkMode() {
+          if (document.getElementById("dm-id").innerHTML === "Dark Theme") {
+            document.getElementById("dm-id").innerHTML = "Light Theme";
+          } else {
+            document.getElementById("dm-id").innerHTML = "Dark Theme";
+          }
+      }
+    </script>
     
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
       <script>
         $(window).scroll(function() {
           if ($(document).scrollTop() > 50) {
             $('.nav').addClass('affix');
-              console.log("OK");
             } else {
             $('.nav').removeClass('affix');
           }

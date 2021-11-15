@@ -14,9 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!-- dedicated stylesheet -->
-    <link rel="stylesheet" href="css/VIM.css" type="text/css">
+    <link rel="stylesheet" href="css/VIM.css?=jscoolbro3" type="text/css">
     <!-- generic stylesheet -->
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css?=jscoolbro3" type="text/css">
 
     <!-- font awesome 5 -->
     <script src="https://kit.fontawesome.com/95ae55bd9a.js" crossorigin="anonymous"></script>
@@ -52,6 +52,7 @@
                   <li><a href="resources"><span class="scorrimentofigo">Resources</span></a></li>
                   <li><a href="../index#aboutus"><span class="scorrimentofigo">About Us</span></a></li>
                   <li class="font-weight-lighter"><a href="it/"><img src="img/bandiera-it.png" alt="" height="30%"> <small>IT</small></a></li>
+                  <li><button class="dark-mode-btn" id="dm-id" onclick="DarkMode()">Dark Theme</button></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -62,27 +63,173 @@
         </div>
     </nav>
 
+
+
     <div class="video-container"> 
       
-        <video class="bg-video" playsinline autoplay muted loop>
+        <video class="bg-video" autoplay loop muted playsinline>
           <source src="img/programming-intro.mp4" type="video/mp4">
+          <source src="img/programming-intro.webm" type="video/webm">
         </video>
 
         <div class="container h-100">
           <div class="d-flex h-100">
-            <div class="w-100 flex-centro-100vh" style="color: white;">
-              <h1 class="title">VIM - Vi IMproved</h1>
-              <h4>VIM tutorial</h4>
-              <h5>Presented by Sala Musk</h5>
+            <div class="w-100 flex-centro-100vh" id="VIM-titolo" style="color: white;">
+              <h1 class="title title-evidenziato">VIM - Vi IMproved</h1>
+              <h4 class="title-evidenziato">VIM tutorial</h4>
+              <h5 class="title-evidenziato">Presented by Sala Musk</h5>
             </div>
           </div>
         </div>
     </div>
 
-<div class="p-4">
-  <h1>VIM Documentation</h1>
-  <p>VIM is a text bla bla</p>
-</div>
+    <div class="body mx-sm-4 px-sm-5 p-4">
+      <h1>What's VIM?</h1>
+      <p>Vim is a Unix <b>text editor</b> that's included in Linux, BSD, and macOS. It's known for being <i>fast</i> and <i>efficient</i>, in part because it's a small application that can run in a terminal (although it also has a graphical interface), but mostly because it can be <b>controlled entirely with the keyboard</b> with no need for menus or a mouse. For instance, to insert text into a file, you press <kbd>I</kbd> and type. To navigate or to issue a command (such as <i>Save</i>, <i>Backspace</i>, <i>Home</i>, <i>End</i>, and so on), you press <kbd>Esc</kbd> on your keyboard and then press whatever key or key combination corresponds with the action you want to take. It's a very <b>different way of editing text</b> compared to what modern computer users expect, but it's the way Unix admins all over the world edit config files, changelogs, scripts, and more.
+      <br>
+      Vim is also commonly referred to as <i>Vi</i> because when it was written in the late 1970s, it was short for visual editor. Before Vi, few people even imagined that a computer could act as a sort of interactive typewriter: text files were edited with commands that would find a specific line and either insert or remove text; literally all text was manipulated with what amounted to a rudimentary version of find-and-replace menu. Vi was a breath of fresh air, enabling users to enter a screen session that showed them their entire file and allowed them to edit it live.</p>
+
+
+      <h1>Learn VIM</h1>
+
+      <!-- no mobile -->
+
+      <div id="no-mobile">
+      
+      <!-- https://codepen.io/amosby/pen/bjGjKw -->
+      <div class="canvas-wrapper mb-5">
+
+          
+        <a href="docs" class="canvas" style="text-decoration: none;">
+          <div class="canvas_border">
+            <svg>
+              <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+              <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
+          </div>
+          <div class="canvas_img-wrapper">
+            <img src="img/documentation.png" class="img-fluid" style="width: 50%; height: auto;">
+          </div>
+          <div class="canvas_copy canvas_copy--left">
+            <span class="canvas_copy_subtitle">VIM</span>
+            <strong class="canvas_copy_title">Documentation</strong>
+            <span class="canvas_copy_details">Learn VIM with us</span>
+          </div>
+        </a>
+
+        <div class="mx-5"></div>
+        
+        <a href="resources" class="canvas" style="text-decoration: none;">
+          <div class="canvas_border">
+            <svg>
+              <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+              <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
+          </div>
+          <div class="canvas_img-wrapper">
+            <img src="img/download.png" class="img-fluid" style="width: 50%; height: auto;">
+          </div>
+          <div class="canvas_copy canvas_copy--left">
+            <span class="canvas_copy_subtitle">VIM</span>
+            <strong class="canvas_copy_title">Resources</strong>
+            <span class="canvas_copy_details">Download the resources</span>
+          </div>
+        </a>
+
+      </div>
+
+      </div>
+
+
+      <!-- no desktop -->
+
+      <div id="no-desktop">
+
+        <a href="docs">
+        <div class="mobile-card-1">
+          <div class="mobile-card-detail">
+            <p class="mobile-card-title p-4">Documentation</p>
+            <p><center><span class="mobile-card-desc">Learn VIM with us</span></center></p>
+          </div>
+          <span class="mobile-back-text">
+            DOCS
+          </span>
+        </div>
+        </a>
+
+        <div class="py-3"></div>
+        
+        <a href="resources">
+        <div class="mobile-card-2">
+          <div class="mobile-card-detail">
+            <p class="mobile-card-title p-4">Resources</p>
+            <p><center><span class="mobile-card-desc">Download the resources</span></center></p>
+          </div>
+          <span class="mobile-back-text">
+            Resources
+          </span>
+        </div>
+        </a>
+
+      </div>
+
+      <h1 class="pt-5 mt-3">Download VIM</h1>
+
+      <!-- https://codepen.io/DivineBlow/pen/ZEBqNZb -->
+      <div class="cards-dl">
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="txt"><img src="img/win-11.png" class="img-fluid" style="height: 1em; width: auto;"> MS Windows</h2>
+                <ul>
+                  <li class="txt"><a href="https://github.com/vim/vim-win32-installer/releases">Recent and signed files</a></li>
+                  <li class="txt"><a href="https://github.com/vim/vim-win32-installer/releases/download/v8.2.2825/gvim_8.2.2825_x86_signed.exe">Stable version gvim_8.2.2825.exe</a></li>
+                  <li class="txt"><a href="https://ftp.nluug.nl/pub/vim/pc/gvim82.exe">Standard self-installing executable</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="face face2 cards-cover">
+            <img src="img/win-11.png" class="img-fluid" style="width: 35%; height: auto;">
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="txt"><img src="img/macos.png" class="img-fluid" style="height: 1em; width: auto;"> MacOs</h2>
+              <ul>
+                <li class="txt"><a href="https://github.com/macvim-dev/macvim">MacVim project (GUI version)</a></li>
+                <li class="txt"><a href="https://formulae.brew.sh/formula/vim">Homebrew (terminal version)</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="face face2 cards-cover">
+            <img src="img/macos.png" class="img-fluid" style="width: 35%; height: auto;">
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="txt"><img src="img/linux.png" class="img-fluid" style="height: 1em; width: auto;"> Unix</h2>
+              <ul>
+                <li class="txt"><a href="https://www.vim.org/git.php">GitHub</a></li>
+                <li class="txt"><a href="https://www.vim.org/mercurial.php">Mercurial</a></li>
+                <li class="txt"><a href="https://github.com/vim/vim-appimage/releases/latest">Appimage (build daily and runs on many Linux systems)</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="face face2 cards-cover">
+            <img src="img/linux.png" class="img-fluid" style="width: 40%; height: auto;">
+          </div>
+        </div>
+      </div>
+
+    </div>
 
     <!-- Footer -->
     <footer class="text-center text-white custom-footer-1" style="font-size: 1rem !important;">
@@ -155,12 +302,7 @@
       <p>Sala Musk v1.0 - <span class="text-monospace initialism">Last edited on 11-11-2021</span></p>
     </div>
 
-
-
-
-        
-
-
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -174,13 +316,107 @@
 
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    
+
+
+<!--
+    <script>
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        var nomobile = document.getElementById('no-mobile');
+        nomobile.style.display = 'none';
+        $('.video-container').css("height" , "80vh");
+        $("#VIM-titolo").removeClass('flex-centro-100vh');
+        $("#VIM-titolo").addClass('flex-centro-80vh');
+      }else{
+        var nodesktop = document.getElementById('no-desktop');
+        nodesktop.style.display = 'none';
+      }
+
+      if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+
+      }
+    </script>
+-->
+
+    <!-- script to detect touch screen device -->
+      <script>
+        function touch() {
+            return ( 'ontouchstart' in window ) || 
+                   ( navigator.maxTouchPoints > 0 ) ||
+                   ( navigator.msMaxTouchPoints > 0 );
+        }
+      
+        if(touch()) {
+          var nomobile = document.getElementById('no-mobile');
+          nomobile.style.display = 'none';
+          $('.video-container').css("height" , "80vh");
+          $("#VIM-titolo").removeClass('flex-centro-100vh');
+          $("#VIM-titolo").addClass('flex-centro-80vh');
+        }
+        else {
+          var nodesktop = document.getElementById('no-desktop');
+          nodesktop.style.display = 'none';
+        }
+      </script>
+
+
+    <!-- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#storing-preferences -->
+    <script>
+      // Select the button
+      const btn = document.querySelector(".dark-mode-btn");
+
+      // Select the theme preference from localStorage
+      const currentTheme = localStorage.getItem("theme");
+
+      // If the current theme in localStorage is "dark"...
+      if (currentTheme == "dark") {
+        // ...then use the .dark-theme class
+        document.body.classList.add("dark-mode");
+        $(".cards-cover").addClass('cards-cover-dark');
+        $(".custom-footer-1").addClass('custom-dark-footer-1');
+        $(".custom-version-bar").addClass('custom-dark-version-bar');
+        $(".canvas_img-wrapper").addClass('canvas_img-wrapper-dark');
+        $(".canvas_copy_title").addClass('text-white');
+        document.getElementById("dm-id").innerHTML = "Light Theme";
+      }
+
+      // Listen for a click on the button 
+      btn.addEventListener("click", function () {
+        // Toggle the .dark-theme class on each click
+        document.body.classList.toggle("dark-mode");
+        $(".cards-cover").toggleClass('cards-cover-dark');
+        $(".custom-footer-1").toggleClass('custom-dark-footer-1');
+        $(".custom-version-bar").toggleClass('custom-dark-version-bar');
+        $(".canvas_img-wrapper").toggleClass('canvas_img-wrapper-dark');
+        $(".canvas_copy_title").toggleClass('text-white');
+
+        // Let's say the theme is equal to light
+        let theme = "light";
+        // If the body contains the .dark-theme class...
+        if (document.body.classList.contains("dark-mode")) {
+          // ...then let's make the theme dark
+          theme = "dark";
+        }
+        // Then save the choice in localStorage
+        localStorage.setItem("theme", theme);
+      });
+
+
+      function DarkMode() {
+          if (document.getElementById("dm-id").innerHTML === "Dark Theme") {
+            document.getElementById("dm-id").innerHTML = "Light Theme";
+          } else {
+            document.getElementById("dm-id").innerHTML = "Dark Theme";
+          }
+      }
+    </script>
   
   <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
       $(window).scroll(function() {
         if ($(document).scrollTop() > 50) {
           $('.nav').addClass('affix');
-            console.log("OK");
           } else {
           $('.nav').removeClass('affix');
         }
@@ -197,5 +433,28 @@
       });
   
       </script>
+  <!-- old dark theme script - no local storage saving preferences
+      <script>
+      function DarkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+          if (document.getElementById("dm-id").innerHTML === "Dark Theme") {
+            document.getElementById("dm-id").innerHTML = "Light Theme";
+            $(".cards-cover").addClass('cards-cover-dark');
+            $(".custom-footer-1").addClass('custom-dark-footer-1');
+            $(".custom-version-bar").addClass('custom-dark-version-bar');
+            $(".canvas_img-wrapper").addClass('canvas_img-wrapper-dark');
+            $(".canvas_copy_title").addClass('text-white');
+          } else {
+            document.getElementById("dm-id").innerHTML = "Dark Theme";
+            $(".cards-cover").removeClass('cards-cover-dark');
+            $(".custom-footer-1").removeClass('custom-dark-footer-1');
+            $(".custom-version-bar").removeClass('custom-dark-version-bar');
+            $(".canvas_img-wrapper").removeClass('canvas_img-wrapper-dark');
+            $(".canvas_copy_title").removeClass('text-white');
+          }
+      }
+      </script>
+  -->
     </body>
 </html>

@@ -74,7 +74,7 @@
     width: auto;
     height: 65px;
     padding: 0;
-    padding-right: 3rem;
+    padding-right: 2.5rem;
 }
 
 .nav div.main_list ul li a {
@@ -396,6 +396,13 @@
     background-image: linear-gradient(to left, #53ff28, #32c71f, #53ff28);
   }
 
+  .custom-dark-footer-1{
+    background-image: linear-gradient(to bottom, #980166, #5d0058) !important;
+  }
+  .custom-dark-version-bar{
+    background-image: linear-gradient(to left, #d428ff, #b31fc7, #d428ff) !important;
+  }
+
 
   /* scrollbar */
   ::-webkit-scrollbar{
@@ -423,3 +430,60 @@
       z-index: 9;
   }
   */
+
+
+.dark-mode{
+    background-color: black !important;
+    color: white !important;
+}
+
+.dark-mode-btn {
+    box-shadow: inset 0 0 0 4px #fff;
+    color: #fff;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    padding: 1em 1em;
+}
+.dark-mode-btn::before, .dark-mode-btn::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+.dark-mode-btn::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+.dark-mode-btn::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+.dark-mode-btn:hover {
+    color: #019833;
+}
+.dark-mode-btn:hover::before, .dark-mode-btn:hover::after {
+    border-color: #019833;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+.dark-mode-btn:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+.dark-mode-btn:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+.dark-mode-btn:focus{
+    outline: none;
+}
