@@ -67,23 +67,41 @@
 
     <!-- https://codepen.io/albizan/pen/mMWdWZ -->
 
-    <?php include("assets/navbar-it.html"); ?>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+              <a href=""><img src="img/sala-musk-logo.png" alt="logo" height="45px"></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                  <li><a href="#projects" class="scrollLink"><span class="scorrimentofigo">Our Projects</span></a></li>
+                  <li><a href="#aboutus" class="scrollLink"><span class="scorrimentofigo">About Us</span></a></li>
+                  <li class="font-weight-lighter"><a href="it"><img src="img/bandiera-it.png" alt="" height="30%"> <small>IT</small></a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
     
 
 
 
 
 <div class="header" id="projects">
-  <h1 class="projectstext">PROGETTI</h1>
+  <h1 class="projectstext">OUR PROJECTS</h1>
 </div>
 
 
 <!-- https://codepen.io/andymerskin/pen/XNMWvQ -->
 <div id="app" class="card-container">
-  <a href="VIM/it/">
+  <a href="VIM">
   <card data-image="img/vim-terminal.png">
     <h1 slot="header">VIM</h1>
-    <p class="card-p" slot="content">Spegazione e tutorial di VIM.</p>
+    <p class="card-p" slot="content">VIM explanation and tutorials.</p>
   </card>
   </a>
 </div>
@@ -134,16 +152,16 @@ document.addEventListener('scroll', function(){
 <!-- https://codepen.io/hexagoncircle/pen/JjRYaZw -->
 
 <header class="header" id="aboutus"> 
-  <h1>CHI SIAMO</h1>
+  <h1>ABOUT US</h1>
 </header>
 
 <main class="main">
   <section class="section">
       <figure class="image-container"><img src="img/ceo-bini.jpg" alt=""/></figure>
       <article class="content">
-          <h2 class="section-title">AD</h2><h3>Bini</h3>
-          <p>Bini Matteo &egrave; l'amministratore delegato di Sala Musk. Ha diretto personalmente le ricerce per le risorse e i documenti del progetto.</p>
-          <p>Bini, nato il 08/03/2004 a Viadana, &egrave; un aspirante studente della classe 3CI IN dell'ITIS "Enrico Fermi" a Mantova. Ha competenze informatiche in Python (Kivy, KivyMD, Tkinter), JavaScript e Node.js con Express per infrastrutture backend, HTML, CSS, gestione dei file, gestione dei database txt, csv e json, gestione di rest apis, comandi Linux bash e basi del C. Durante la sua carriera raggiunse la 2&deg; posizione nelle nazionali a squadre dei tornei di OPS (Problem Solving).</p>
+          <h2 class="section-title">CEO</h2><h3>Bini</h3>
+          <p>Bini Matteo is the Chief Executive Officer of Sala Musk. He directed personally the researches for the resources and documentation of the project.</p>
+          <p>Bini, born 08/03/2004 in Viadana, is an aspiring student of 3CI IN at ITIS "Enrico Fermi" Mantua. He has competences in Python (Kivy, KivyMD, Tkinter), JavaScript and Node.js with Express for backend infrastructure, HTML, CSS, file managing, txt, csv and json database managing, rest apis managing, Linux bash commands and basic C skills. During his career, he reached 2&deg; position in national team OPS (Problem Solving) tournaments.</p>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:binim@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/MatteoBini" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://twitter.com/matteobini_" role="button"><i class="fab fa-twitter"></i><br/>Twitter</a>
@@ -152,16 +170,16 @@ document.addEventListener('scroll', function(){
   <section class="section">
       <figure class="image-container"><img src="img/rro-kevin_vaccaro.jpg" alt=""/></figure>
       <article class="content">
-          <h2 class="section-title">Risorse Online</h2><h3>Kevin & Andrea</h3>
-          <p>Il Reparto Risorse Online gestisce i servizi online, incluso questo sito. &Egrave; composto da Kevin Liu (destra) e Andrea Vaccaro (sinistra).</p>
-          <p>Kevin, nato il 01/01/2005 a Castelfranco Veneto, è molto interessato alla programmazione front-end, in particolare HTML e CSS. Ha anche competenze di base in C, JavaScript, Python e bravo a copiare codici di Stack Overflow e Codepen. Si definisce un Open Source Codes Collage Artist (OSCCA - Artista di Collage dei codici Open Source).</p>
-          <p>Andrea, nato il 27/12/2005 a Casalmaggiore, ha esperienza in programmazione front-end e back-end. Conosce diversi linguaggi, compreso C, HTML5, CSS3, JavaScript e basi di Python. Era parte della squadra di OPS che raggiunse 2&deg; nei tornei nazionali.</p>
-          <p>Sono entrambi ambiziosi studenti della classe 3CI IN dell'ITIS "Enrico Fermi" Mantova.</p>
-          <p style="font-size: 1.2rem;">Contatta Kevin</p>
+          <h2 class="section-title">Online Resources Team</h2><h3>Kevin & Andrea</h3>
+          <p>The online resources department deals with online services, including this website. It's composed by Kevin Liu (right) and Andrea Vaccaro (left).</p>
+          <p>Kevin, born 01/01/2005 in Castelfranco Veneto, is very intrested in front-end developing, in particular HTML and CSS. He has also basic competences in C, JavaScript, Python and good at copying Stack Overflow and Codepen codes. He defines himself as an Open Source Codes Collage Artist (OSCCA).</p>
+          <p>Andrea, born 27/12/2005 in Casalmaggiore, has experence in front-end and back-end developing. He can code in different languages, including C, HTML5, CSS3, JavaScript and basic programs in Python. He was part of the OPS team that reached 2&deg; in the national tournament.</p>
+          <p>They're both ambitious students of 3CI IN at ITIS "E. Fermi" Mantua.</p>
+          <p style="font-size: 1.2rem;">Contact Kevin</p>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:cliu@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/kev1nl1u" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://twitter.com/kevinIiu" role="button"><i class="fab fa-twitter"></i><br/>Twitter</a>
-          <p style="font-size: 1.2rem;">Contatta Andrea</p>
+          <p style="font-size: 1.2rem;">Contact Andrea</p>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:vaccaroa@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://instagram.com/vmc.andrea" role="button"><i class="fab fa-instagram"></i><br/>IG</a>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="http://websurfers.epizy.com" role="button"><i class="fas fa-external-link-alt"></i><br/>Website</a>
@@ -170,17 +188,17 @@ document.addEventListener('scroll', function(){
   <section class="section">
       <figure class="image-container"><img src="img/dw-anton_zibo_sirico.jpg" alt=""/></figure>
       <article class="content">
-        <h2 class="section-title">Scrittori della Documentazione</h2><h3>Seba, Davide & Anton</h3>
-        <p>Il Reparto Scrittori della Documentazione &egrave; composto da Sebastiano Zibordi, Davide Sirico e Alessandro Anton. Con la coordinazione di Matteo Bini, la squadra svolge tutte le ricerche e scrive le documentazioni.</p>
-        <p>Sebastiano Zibordi, nato il //2005 a , &egrave; </p>
-        <p>Davide Sirico, nato il //2005 a , &egrave; </p>
-        <p>Alessandro Anton, nato il 11/07/2005 a Pieve di Coriano, &egrave; uno studente peculiare dell'ITIS "Enrico Fermi" Mantova con l'obiettivo di dominare il mondo intero attraverso la fisica realisca nei programmi. Con HTML, CSS, JavaScript e competenze basiche di C e C# nella sua mente, &egrave; riuscito ad alzare un cubo di un un'unit&agrave;. A lui stesso piace dimostrare questo risultato con gloria e onore agli altri.</p>
-        <p style="font-size: 1.2rem;">Sebastiano</p>
+        <h2 class="section-title">Documentation Writers</h2><h3>Seba, Davide & Anton</h3>
+        <p>The Documentation Writers Team is composed by Sebastiano Zibordi, Davide Sirico and Alessandro Anton. With Bini's coordination, the team made all the researches of the projects and wrote the documentations.</p>
+        <p>Sebastiano Zibordi, born //2005 in , is </p>
+        <p>Davide Sirico, born //2005 in , is </p>
+        <p>Alessandro Anton, born 11/07/2005 in Pieve di Coriano, is a very peculiar boy who studies at ITIS "E. Fermi" Mantua with the goal of dominating the entire world through realistic physics in programs. With HTML, CSS, JavaScript, basic knowledge of C and C# in his mind, he has managed to move one cube up by 1 unit. He himself likes to demonstrate this achievement with glory and honor to others.</p>
+        <p style="font-size: 1.2rem;">Sebastiano's socials</p>
         <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:szibordi@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-        <p style="font-size: 1.2rem;">Davide</p>
+        <p style="font-size: 1.2rem;">Davide's socials</p>
         <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:dsirico@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
         <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
-        <p style="font-size: 1.2rem;">Alessandro</p>
+        <p style="font-size: 1.2rem;">Alessandro's socials</p>
         <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:aanton@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
         <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
       </article>
@@ -195,7 +213,77 @@ document.addEventListener('scroll', function(){
 
 
 
-  <?php include("assets/footer-it.html"); ?>
+
+    <!-- Footer -->
+    <footer class="text-center text-white custom-footer-1" style="font-size: 1rem !important;">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <h5 class="text-center text-white mb-3">Contacts</h5>
+        <div class="row">
+          <div class="col-sm">
+            <section class="mb-2">
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/kev1nl1u" role="button"><i class="fab fa-github"></i><br/>Kevin</a>
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://twitter.com/kevinIiu" role="button"><i class="fab fa-twitter"></i><br/>Kevin</a>
+            </section>
+          </div>
+          <div class="col-sm">
+            <section class="mb-2">
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/MatteoBini" role="button"><i class="fab fa-github"></i><br/>Bini</a>
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://twitter.com/matteobini_" role="button"><i class="fab fa-twitter"></i><br/>Bini</a>
+            </section>
+          </div>
+          <div class="col-sm">
+            <section class="mb-2">
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="#!" role="button"><i class="fab fa-github"></i><br/>Zibo</a>
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Zibo</a>
+            </section>
+          </div>
+          <div class="col-sm">
+            <section class="mb-2">
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>Davide</a>
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Davide</a>
+            </section>
+          </div>
+          <div class="col-sm">
+            <section class="mb-2">
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>Andrea</a>
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://instagram.com/vmc.andrea" role="button"><i class="fab fa-instagram"></i><br/>Andrea</a>
+            </section>
+          </div>
+          <div class="col-sm">
+            <section class="mb-2">
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>Anton</a>
+              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Anton</a>
+            </section>
+          </div>
+        </div>
+    
+        <!-- Wiki -->
+        <section class="mb-4">
+          <div class="row">
+            <div class="col-lg-6 p-4">
+              <a href=""><img src="img/sala-musk-logo.png" class="img-fluid"></a>
+            </div>
+            <div class="col-lg-6">
+              <div class="flex-centro-100100 p-4">
+                Sala Musk is a no-profit organization created by 6 students of the 3CI-IN of the ITIS "Enrico Fermi" MN. Started on 27/10/2021, our mission is to build an Open Source learning world.
+              </div>
+            </div>
+          </div>
+        </section>
+        <a href="it" style="color: white" class="a-hover-none"><img src="img/bandiera-it.png" height="20px"> <u>Italian version</u></a><br/>
+        <a href="#gototop" style="color: white" class="a-hover-none scrollLink"><u>Go to top</u></a>
+      </div>
+    
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3);">
+        &copy; 2021 <span style="font-weight: 700;">3CI IN Organization</span> for education. <span class="text-muted">Open Source project.</span></a>
+      </div>
+    
+    </footer>
+    
+    <div class="text-center text-white p-1 custom-version-bar" style="font-size: 1rem !important;">
+      <p>Sala Musk v1.0 - <span class="text-monospace initialism">Last edited on 11-11-2021</span></p>
+    </div>
   
   
   
@@ -209,7 +297,7 @@ document.addEventListener('scroll', function(){
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <!-- inizialize AOS  -->
-      <script type="text/javascript" src="js/aos.js"></script>
+      <script type="text/javascript" src="css/AOS/aos.js"></script>
       <script type="text/javascript">
           AOS.init();
       </script>
