@@ -67,25 +67,7 @@
 
     <!-- https://codepen.io/albizan/pen/mMWdWZ -->
 
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-              <a href=""><img src="img/sala-musk-logo.png" alt="logo" height="45px"></a>
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                  <li><a href="#projects" class="scrollLink"><span class="scorrimentofigo">Progetti</span></a></li>
-                  <li><a href="#aboutus" class="scrollLink"><span class="scorrimentofigo">Chi Siamo</span></a></li>
-                  <li class="font-weight-lighter"><a href="/"><img src="img/bandiera-en.png" alt="" height="30%"> <small>EN</small></a></li>
-                </ul>
-            </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
-        </div>
-    </nav>
+    <?php include("assets/navbar-it.html"); ?>
     
 
 
@@ -213,77 +195,7 @@ document.addEventListener('scroll', function(){
 
 
 
-
-    <!-- Footer -->
-<footer class="text-center text-white custom-footer-1" style="font-size: 1rem !important;">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <h5 class="text-center text-white mb-3">Contatti</h5>
-      <div class="row">
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/kev1nl1u" role="button"><i class="fab fa-github"></i><br/>Kevin</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://twitter.com/kevinIiu" role="button"><i class="fab fa-twitter"></i><br/>Kevin</a>
-          </section>
-        </div>
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/MatteoBini" role="button"><i class="fab fa-github"></i><br/>Bini</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://twitter.com/matteobini_" role="button"><i class="fab fa-twitter"></i><br/>Bini</a>
-          </section>
-        </div>
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="#!" role="button"><i class="fab fa-github"></i><br/>Zibo</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Zibo</a>
-          </section>
-        </div>
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>Davide</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Davide</a>
-          </section>
-        </div>
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>Andrea</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://instagram.com/vmc.andrea" role="button"><i class="fab fa-instagram"></i><br/>Andrea</a>
-          </section>
-        </div>
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>Anton</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Anton</a>
-          </section>
-        </div>
-      </div>
-  
-      <!-- Wiki -->
-      <section class="mb-4">
-        <div class="row">
-          <div class="col-lg-6 p-4">
-            <a href=""><img src="img/sala-musk-logo.png" class="img-fluid"></a>
-          </div>
-          <div class="col-lg-6">
-            <div class="flex-centro-100100 p-4">
-              Sala Musk &egrave; un'organizzazione no-profit creata da 6 studenti della classe 3CI-IN dell'ITIS "Enrico Fermi" MN. Fondato il 27/10/2021, il nostro obiettivo &egrave; di creare un mondo di educazione Open Source.
-            </div>
-          </div>
-        </div>
-      </section>
-      <a href="/" style="color: white" class="a-hover-none"><img src="img/bandiera-en.png" height="20px"> <u>Versione in inglese</u></a><br/>
-      <a href="#gototop" style="color: white" class="a-hover-none scrollLink"><u>Torna in alto</u></a>
-    </div>
-  
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3);">
-      © 2021 <span style="font-weight: 700;">3CI IN Organization</span> per l'insegnamento. <span class="text-muted">Progetto Open Source.</span></a>
-    </div>
-  
-  </footer>
-  
-  <div class="text-center text-white p-1 custom-version-bar" style="font-size: 1rem !important;">
-    <p>Sala Musk v1.0 - <span class="text-monospace initialism">Ultima modifica il 11-11-2021</span></p>
-  </div>
+  <?php include("assets/footer-it.html"); ?>
   
   
   

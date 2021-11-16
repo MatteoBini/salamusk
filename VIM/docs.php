@@ -71,59 +71,9 @@
     <footer class="text-center text-white custom-footer-1" style="font-size: 1rem !important;">
       <!-- Grid container -->
       <div class="container p-4">
-        <h5 class="text-center text-white mb-3">Contacts</h5>
-        <div class="row">
-          <div class="col-sm">
-            <section class="mb-2">
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/kev1nl1u" role="button"><i class="fab fa-github"></i><br/>Kevin</a>
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://twitter.com/kevinIiu" role="button"><i class="fab fa-twitter"></i><br/>Kevin</a>
-            </section>
-          </div>
-          <div class="col-sm">
-            <section class="mb-2">
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/MatteoBini" role="button"><i class="fab fa-github"></i><br/>Bini</a>
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://twitter.com/matteobini_" role="button"><i class="fab fa-twitter"></i><br/>Bini</a>
-            </section>
-          </div>
-          <div class="col-sm">
-            <section class="mb-2">
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="#!" role="button"><i class="fab fa-github"></i><br/>Zibo</a>
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Zibo</a>
-            </section>
-          </div>
-          <div class="col-sm">
-            <section class="mb-2">
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>Davide</a>
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Davide</a>
-            </section>
-          </div>
-          <div class="col-sm">
-            <section class="mb-2">
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>Andrea</a>
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://instagram.com/vmc.andrea" role="button"><i class="fab fa-instagram"></i><br/>Andrea</a>
-            </section>
-          </div>
-          <div class="col-sm">
-            <section class="mb-2">
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>Anton</a>
-              <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Anton</a>
-            </section>
-          </div>
-        </div>
-    
-        <!-- Wiki -->
-        <section class="mb-4">
-          <div class="row">
-            <div class="col-lg-6 p-4">
-              <a href=""><img src="img/sala-musk-logo.png" class="img-fluid"></a>
-            </div>
-            <div class="col-lg-6">
-              <div class="flex-centro-100100 p-4">
-                Sala Musk is a no-profit organization created by 6 students of the 3CI-IN of the ITIS "Enrico Fermi" MN. Started on 27/10/2021, our mission is to build an Open Source learning world.
-              </div>
-            </div>
-          </div>
-        </section>
+        
+        <?php include("assets/footer.html"); ?>
+
         <a href="it/docs" style="color: white" class="a-hover-none"><img src="img/bandiera-it.png" height="20px"> <u>Italian version</u></a><br/>
         <a href="#gototop" style="color: white" class="a-hover-none scrollLink"><u>Go to top</u></a>
       </div>
@@ -134,10 +84,7 @@
     
     </footer>
     
-    <div class="text-center text-white p-1 custom-version-bar" style="font-size: 1rem !important;">
-      <p>Sala Musk v1.0 - <span class="text-monospace initialism">Last edited on 11-11-2021</span></p>
-    </div>
-  
+    <?php include("assets/footer_ver.html"); ?>
   
   
   
