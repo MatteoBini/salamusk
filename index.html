@@ -64,6 +64,39 @@
         })
       </script>
       -->
+      <!--
+      <script>
+        window.addEventListener("load", function() {
+          if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+            
+          }
+        });
+      </script>
+      -->
+      <script>
+        var a1=0, a2=0, a3=0, a4=0, a5=0, a6=0;
+        window.addEventListener("scroll", function() {
+          if (window.scrollY > (document.getElementById("projects").offsetTop + document.getElementById("projects").offsetHeight) && a1 == 0) {
+            console.log("We're no strangers to love\nYou know the rules and so do I\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand");
+            a1=1;
+          }else if (window.scrollY > (document.getElementById("app").offsetTop + document.getElementById("app").offsetHeight) && a2 == 0) {
+            console.log("Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you");
+            a2=1;
+          }else if (window.scrollY > (document.getElementById("aboutus").offsetTop + document.getElementById("aboutus").offsetHeight) && a3 == 0) {
+            console.log("We've known each other for so long\nYour heart's been aching, but you're too shy to say it\nInside, we both know what's been going on\nWe know the game, and we're gonna play it\nAnd if you ask me how I'm feeling\nDon't tell me you're too blind to see");
+            a3=1;
+          }else if (window.scrollY > (document.getElementById("_ceo").offsetTop + document.getElementById("_ceo").offsetHeight) && a4 == 0) {
+            console.log("Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you");
+            a4=1;
+          }else if (window.scrollY > (document.getElementById("_rro").offsetTop + document.getElementById("_rro").offsetHeight) && a5 == 0) {
+            console.log("We've known each other for so long\nYour heart's been aching, but you're too shy to say it\nInside, we both know what's been going on\nWe know the game, and we're gonna play it\nI just wanna tell you how I'm feeling\nGotta make you understand");
+            a5=1;
+          }else if (window.scrollY > (document.getElementById("_dw").offsetTop + document.getElementById("_dw").offsetHeight) && a6 == 0) {
+            console.log("Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you");
+            a6=1;
+          }
+        });
+      </script>
 
     <!-- https://codepen.io/albizan/pen/mMWdWZ -->
 
@@ -76,7 +109,7 @@
                 <ul class="navlinks">
                   <li><a href="#projects" class="scrollLink"><span class="scorrimentofigo">Our Projects</span></a></li>
                   <li><a href="#aboutus" class="scrollLink"><span class="scorrimentofigo">About Us</span></a></li>
-                  <li class="font-weight-lighter"><a href="it"><img src="img/bandiera-it.png" alt="" height="30%"> <small>IT</small></a></li>
+                  <li class="font-weight-lighter"><a href="it""><img src="img/bandiera-it.png" alt="" height="30%"> <small>IT</small></a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -156,24 +189,28 @@ document.addEventListener('scroll', function(){
 </header>
 
 <main class="main">
-  <section class="section">
+  <section class="section" id="_ceo">
       <figure class="image-container"><img src="img/ceo-bini.jpg" alt=""/></figure>
       <article class="content">
           <h2 class="section-title">CEO</h2><h3>Bini</h3>
           <p>Bini Matteo is the Chief Executive Officer of Sala Musk. He directed personally the researches for the resources and documentation of the project.</p>
-          <p>Bini, born 08/03/2004 in Viadana, is an aspiring student of 3CI IN at ITIS "Enrico Fermi" Mantua. He has competences in Python (Kivy, KivyMD, Tkinter), JavaScript and Node.js with Express for backend infrastructure, HTML, CSS, file managing, txt, csv and json database managing, rest apis managing, Linux bash commands and basic C skills. During his career, he reached 2&deg; position in national team OPS (Problem Solving) tournaments.</p>
+          <p>Bini, born on 08/03/2004 in Viadana, is an aspiring student of 3CI IN at ITIS "Enrico Fermi" Mantua. He has competences in Python (Kivy, KivyMD, Tkinter), JavaScript and Node.js with Express for backend infrastructure, HTML, CSS, file managing, txt, csv and json database managing, rest apis managing, Linux bash commands and basic C skills. During his career, he reached 2<sup>nd</sup> position in national team OPS (Problem Solving) tournaments.</p>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:binim@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/MatteoBini" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://twitter.com/matteobini_" role="button"><i class="fab fa-twitter"></i><br/>Twitter</a>
       </article>
   </section>
-  <section class="section">
+  <section class="section" id="_rro">
       <figure class="image-container"><img src="img/rro-kevin_vaccaro.jpg" alt=""/></figure>
       <article class="content">
           <h2 class="section-title">Online Resources Team</h2><h3>Kevin & Andrea</h3>
-          <p>The online resources department deals with online services, including this website. It's composed by Kevin Liu (right) and Andrea Vaccaro (left).</p>
-          <p>Kevin, born 01/01/2005 in Castelfranco Veneto, is very intrested in front-end developing, in particular HTML and CSS. He has also basic competences in C, JavaScript, Python and good at copying Stack Overflow and Codepen codes. He defines himself as an Open Source Codes Collage Artist (OSCCA).</p>
-          <p>Andrea, born 27/12/2005 in Casalmaggiore, has experence in front-end and back-end developing. He can code in different languages, including C, HTML5, CSS3, JavaScript and basic programs in Python. He was part of the OPS team that reached 2&deg; in the national tournament.</p>
+          <p>The online resources department deals with online services, including this website. It's composed by Kevin Liu <small>(right)</small> and Andrea Vaccaro <small>(left)</small>.</p>
+          <p>Kevin, born on 01/01/2005 in Castelfranco Veneto, is very intrested in front-end developing, in particular HTML and CSS. He has also basic competences in C, JavaScript, Python and good at copying Stack Overflow and Codepen codes. He defines himself as an Open Source Codes Collage Artist (OSCCA).
+            <blockquote class="blockquote" style="font-size: 0.9em;">"You miss 100&#37; of the shots you don't take <small>— Wayne Gretzky <small>— Michael Scott</small></small>"
+              <footer class="blockquote-footer">Kevin Liu</footer>
+            </blockquote></p>
+          </p>
+          <p>Andrea, born on 27/12/2005 in Casalmaggiore, has experence in front-end and back-end developing. He can code in different languages, including C, HTML5, CSS3, JavaScript and basic programs in Python. He was part of the OPS team that reached 2<sup>nd</sup> in the national tournament.</p>
           <p>They're both ambitious students of 3CI IN at ITIS "E. Fermi" Mantua.</p>
           <p style="font-size: 1.2rem;">Contact Kevin</p>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:cliu@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
@@ -181,24 +218,31 @@ document.addEventListener('scroll', function(){
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://twitter.com/kevinIiu" role="button"><i class="fab fa-twitter"></i><br/>Twitter</a>
           <p style="font-size: 1.2rem;">Contact Andrea</p>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:vaccaroa@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
+          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/AndreaCrazyProgrammerPazzo" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://instagram.com/vmc.andrea" role="button"><i class="fab fa-instagram"></i><br/>IG</a>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="http://websurfers.epizy.com" role="button"><i class="fas fa-external-link-alt"></i><br/>Website</a>
     </article>
   </section>
-  <section class="section">
+  <section class="section" id="_dw">
       <figure class="image-container"><img src="img/dw-anton_zibo_sirico.jpg" alt=""/></figure>
       <article class="content">
         <h2 class="section-title">Documentation Writers</h2><h3>Seba, Davide & Anton</h3>
-        <p>The Documentation Writers Team is composed by Sebastiano Zibordi, Davide Sirico and Alessandro Anton. With Bini's coordination, the team made all the researches of the projects and wrote the documentations.</p>
-        <p>Sebastiano Zibordi, born //2005 in , is </p>
-        <p>Davide Sirico, born //2005 in , is </p>
-        <p>Alessandro Anton, born 11/07/2005 in Pieve di Coriano, is a very peculiar boy who studies at ITIS "E. Fermi" Mantua with the goal of dominating the entire world through realistic physics in programs. With HTML, CSS, JavaScript, basic knowledge of C and C# in his mind, he has managed to move one cube up by 1 unit. He himself likes to demonstrate this achievement with glory and honor to others.</p>
-        <p style="font-size: 1.2rem;">Sebastiano's socials</p>
+        <p>The Documentation Writers Team is composed by Sebastiano Zibordi <small>(right)</small>, Davide Sirico <small>(center)</small> and Alessandro Anton <small>(left)</small>. With Bini's coordination, the team made all the researches of the projects and wrote the documentations.</p>
+        <p>Sebastiano Zibordi, born on 25/10/2005 in Mantua, for his friends <i>Zibo</i>, is part of the 3CIIN class of the ITIS "E. Fermi" Mantua. He has basic knowledge in C, HTML, Python and pentesting.</p>
+        <p>Davide Sirico, for Culpo "<b>Surico</b>", born on 02/04/2005 in Mantua, is a member of the 3CIIN class of the ITIS "E. Fermi" school. He has a good knowledge of Python, Linux infrastructures and has 2 certifications in Scatch. 
+        He is also capable of programming in C and has experience in HTML.<br/>
+        <blockquote class="blockquote">"My programs don't have bugs, they just have unexpected features"
+          <footer class="blockquote-footer">Davide Sirico</footer>
+        </blockquote></p>
+        <p>Alessandro Anton, born on 11/07/2005 in Pieve di Coriano, is a very peculiar boy who studies at ITIS "E. Fermi" Mantua with the goal of dominating the entire world through realistic physics in programs. With HTML, CSS, JavaScript, basic knowledge of C and C# in his mind, he has managed to move one cube up by 1 unit. He himself likes to demonstrate this achievement with glory and honor to others.</p>
+        <p style="font-size: 1.2rem;">Contact Sebastiano</p>
         <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:szibordi@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-        <p style="font-size: 1.2rem;">Davide's socials</p>
+        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/HSzibo" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
+        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://www.instagram.com/sebastianozibordi/" role="button"><i class="fab fa-instagram"></i><br/>IG</a>
+        <p style="font-size: 1.2rem;">Contact Davide</p>
         <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:dsirico@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
         <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
-        <p style="font-size: 1.2rem;">Alessandro's socials</p>
+        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://www.instagram.com/davidesirico05/" role="button"><i class="fab fa-instagram"></i><br/>IG</a>
+        <p style="font-size: 1.2rem;">Contact Alessandro</p>
         <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:aanton@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
         <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
       </article>
@@ -252,8 +296,8 @@ document.addEventListener('scroll', function(){
         </div>
         <div class="col-sm">
           <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>Anton</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Anton</a>
+            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>Alex</a>
+            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="mailto:aanton@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>Alex</a>
           </section>
         </div>
       </div>
@@ -271,7 +315,7 @@ document.addEventListener('scroll', function(){
           </div>
         </div>
       </section>
-      <a href="it.html" style="color: white" class="a-hover-none"><img src="img/bandiera-it.png" height="20px"> <u>Italian version</u></a><br/>
+      <a href="it" style="color: white" class="a-hover-none"><img src="img/bandiera-it.png" height="20px"> <u>Italian version</u></a><br/>
       <a href="#gototop" style="color: white" class="a-hover-none scrollLink"><u>Go to top</u></a>
     </div>
   
