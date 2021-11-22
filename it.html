@@ -64,6 +64,30 @@
         })
       </script>
       -->
+      <script>
+        var a1=0, a2=0, a3=0, a4=0, a5=0, a6=0;
+        window.addEventListener("scroll", function() {
+          if (window.scrollY > (document.getElementById("projects").offsetTop + document.getElementById("projects").offsetHeight) && a1 == 0) {
+            console.log("We're no strangers to love\nYou know the rules and so do I\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand");
+            a1=1;
+          }else if (window.scrollY > (document.getElementById("app").offsetTop + document.getElementById("app").offsetHeight) && a2 == 0) {
+            console.log("Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you");
+            a2=1;
+          }else if (window.scrollY > (document.getElementById("aboutus").offsetTop + document.getElementById("aboutus").offsetHeight) && a3 == 0) {
+            console.log("We've known each other for so long\nYour heart's been aching, but you're too shy to say it\nInside, we both know what's been going on\nWe know the game, and we're gonna play it\nAnd if you ask me how I'm feeling\nDon't tell me you're too blind to see");
+            a3=1;
+          }else if (window.scrollY > (document.getElementById("_ceo").offsetTop + document.getElementById("_ceo").offsetHeight) && a4 == 0) {
+            console.log("Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you");
+            a4=1;
+          }else if (window.scrollY > (document.getElementById("_rro").offsetTop + document.getElementById("_rro").offsetHeight) && a5 == 0) {
+            console.log("We've known each other for so long\nYour heart's been aching, but you're too shy to say it\nInside, we both know what's been going on\nWe know the game, and we're gonna play it\nI just wanna tell you how I'm feeling\nGotta make you understand");
+            a5=1;
+          }else if (window.scrollY > (document.getElementById("_dw").offsetTop + document.getElementById("_dw").offsetHeight) && a6 == 0) {
+            console.log("Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you");
+            a6=1;
+          }
+        });
+      </script>
 
     <!-- https://codepen.io/albizan/pen/mMWdWZ -->
 
@@ -156,7 +180,7 @@ document.addEventListener('scroll', function(){
 </header>
 
 <main class="main">
-  <section class="section">
+  <section class="section" id="_ceo">
       <figure class="image-container"><img src="img/ceo-bini.jpg" alt=""/></figure>
       <article class="content">
           <h2 class="section-title">AD</h2><h3>Bini</h3>
@@ -167,7 +191,7 @@ document.addEventListener('scroll', function(){
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://twitter.com/matteobini_" role="button"><i class="fab fa-twitter"></i><br/>Twitter</a>
       </article>
   </section>
-  <section class="section">
+  <section class="section" id="_rro">
       <figure class="image-container"><img src="img/rro-kevin_vaccaro.jpg" alt=""/></figure>
       <article class="content">
           <h2 class="section-title">Risorse Online</h2><h3>Kevin & Andrea</h3>
@@ -181,28 +205,35 @@ document.addEventListener('scroll', function(){
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://twitter.com/kevinIiu" role="button"><i class="fab fa-twitter"></i><br/>Twitter</a>
           <p style="font-size: 1.2rem;">Contatta Andrea</p>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:vaccaroa@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
+          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/AndreaCrazyProgrammerPazzo" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
           <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://instagram.com/vmc.andrea" role="button"><i class="fab fa-instagram"></i><br/>IG</a>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="http://websurfers.epizy.com" role="button"><i class="fas fa-external-link-alt"></i><br/>Website</a>
     </article>
   </section>
-  <section class="section">
-      <figure class="image-container"><img src="img/dw-anton_zibo_sirico.jpg" alt=""/></figure>
-      <article class="content">
-        <h2 class="section-title">Scrittori della Documentazione</h2><h3>Seba, Davide & Anton</h3>
-        <p>Il Reparto Scrittori della Documentazione &egrave; composto da Sebastiano Zibordi, Davide Sirico e Alessandro Anton. Con la coordinazione di Matteo Bini, la squadra svolge tutte le ricerche e scrive le documentazioni.</p>
-        <p>Sebastiano Zibordi, nato il //2005 a , &egrave; </p>
-        <p>Davide Sirico, nato il //2005 a , &egrave; </p>
-        <p>Alessandro Anton, nato il 11/07/2005 a Pieve di Coriano, &egrave; uno studente peculiare dell'ITIS "Enrico Fermi" Mantova con l'obiettivo di dominare il mondo intero attraverso la fisica realisca nei programmi. Con HTML, CSS, JavaScript e competenze basiche di C e C# nella sua mente, &egrave; riuscito ad alzare un cubo di un un'unit&agrave;. A lui stesso piace dimostrare questo risultato con gloria e onore agli altri.</p>
-        <p style="font-size: 1.2rem;">Sebastiano</p>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:szibordi@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-        <p style="font-size: 1.2rem;">Davide</p>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:dsirico@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
-        <p style="font-size: 1.2rem;">Alessandro</p>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:aanton@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
-      </article>
-    </section>
+  <section class="section" id="_dw">
+    <figure class="image-container"><img src="img/dw-anton_zibo_sirico.jpg" alt=""/></figure>
+    <article class="content">
+      <h2 class="section-title">Documentation Writers</h2><h3>Seba, Davide & Anton</h3>
+      <p>Il Reparto Scrittori della Documentazione è composto da Sebastiano Zibordi <small>(destra)</small>, Davide Sirico <small>(centro)</small> e Alessandro Anton <small>(sinistra)</small>. Con la coordinazione di Matteo Bini, la squadra svolge tutte le ricerche e scrive le documentazioni.</p>
+      <p>Sebastiano Zibordi, nato il 25/10/2005 a Mantova, per gli amici <i>Zibo</i>, &egrave; parte della classe 3CIIN dell'ITIS "E. Fermi" Mantova. Ha competenze di base in C, HTML, Python e PenTest.</p>
+      <p>Davide Sirico, per Culpo "<b>Surico</b>", nato il 02/04/2005 a Mantova, &egrave; un membro della classe 3CIIN dell'ITIS "E. Fermi" Mantova. Ha buone conoscenze in Python, infrastrutture Linux e ha 2 certificazioni in Scatch. 
+      &Egrave; anche competente in C e ha esperienza in HTML.<br/>
+      <blockquote class="blockquote">"I miei programmi non hanno bugs, hanno solo features inaspettate"
+        <footer class="blockquote-footer">Davide Sirico</footer>
+      </blockquote></p>
+      <p>Alessandro Anton, nato il 11/07/2005 a Pieve di Coriano, è uno studente peculiare dell'ITIS "Enrico Fermi" Mantova con l'obiettivo di dominare il mondo intero attraverso la fisica realisca nei programmi. Con HTML, CSS, JavaScript e competenze basiche di C e C# nella sua mente, è riuscito ad alzare un cubo di un un'unità. A lui stesso piace dimostrare questo risultato con gloria e onore agli altri.</p>
+      <p style="font-size: 1.2rem;">Contatta Sebastiano</p>
+      <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:szibordi@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
+      <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/HSzibo" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
+      <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://www.instagram.com/sebastianozibordi/" role="button"><i class="fab fa-instagram"></i><br/>IG</a>
+      <p style="font-size: 1.2rem;">Contatta Davide</p>
+      <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:dsirico@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
+      <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
+      <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://www.instagram.com/davidesirico05/" role="button"><i class="fab fa-instagram"></i><br/>IG</a>
+      <p style="font-size: 1.2rem;">Contatta Alessandro</p>
+      <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:aanton@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
+      <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
+    </article>
+  </section>
 </main>
 
 
@@ -252,8 +283,8 @@ document.addEventListener('scroll', function(){
         </div>
         <div class="col-sm">
           <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>Anton</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Anton</a>
+            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>Alex</a>
+            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="mailto:aanton@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>Alex</a>
           </section>
         </div>
       </div>
@@ -276,7 +307,7 @@ document.addEventListener('scroll', function(){
     </div>
   
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3);">
-      © 2021 <span style="font-weight: 700;">3CI IN Organization</span> per l'insegnamento. <span class="text-muted">Progetto Open Source.</span></a>
+      © CC BY-NC 2021 <span style="font-weight: 700;">3CI IN Organization</span> per l'istruzione. <span class="text-muted">Progetto Open Source.</span></a>
     </div>
   
   </footer>
@@ -297,7 +328,7 @@ document.addEventListener('scroll', function(){
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <!-- inizialize AOS  -->
-      <script type="text/javascript" src="js/aos.js"></script>
+      <script type="text/javascript" src="css/aos/aos.js"></script>
       <script type="text/javascript">
           AOS.init();
       </script>

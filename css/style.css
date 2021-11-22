@@ -106,7 +106,7 @@
 }
 
 
-/* Media qurey section */
+/* Media query section */
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
     .container {
@@ -486,4 +486,12 @@
 }
 .dark-mode-btn:focus{
     outline: none;
+}
+
+.btn{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center;
 }

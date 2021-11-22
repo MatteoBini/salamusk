@@ -14,9 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!-- dedicated stylesheet -->
-    <link rel="stylesheet" href="../css/VIM.css" type="text/css">
+    <link rel="stylesheet" href="../css/VIM.css?=jscoolbro3" type="text/css">
     <!-- generic stylesheet -->
-    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../../css/style.css?=jscoolbro3" type="text/css">
 
     <!-- font awesome 5 -->
     <script src="https://kit.fontawesome.com/95ae55bd9a.js" crossorigin="anonymous"></script>
@@ -33,8 +33,7 @@
 	  </script>
 
     <!-- AOS css -->
-		<link href="../../css/AOS/aos.css" rel="stylesheet">
-
+	<link href="../../css/AOS/aos.css" rel="stylesheet">
 
     </head>
     <body id="gototop">
@@ -44,15 +43,16 @@
     <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="../../it.html"><img src="../img/sala-musk-logo.png" alt="logo" height="45px"></a><img src="../img/vertical-line-white.png" height="45px"><a href="../it/"><img src="../img/vim-terminal.png" alt="" height="45px"></a>
+                <a href="/"><img src="../img/sala-musk-logo.png" alt="logo" height="45px"></a><img src="../img/vertical-line-white.png" height="45px"><a href=""><img src="../img/vim-terminal.png" alt="" height="45px"></a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href=""><span class="scorrimentofigo"><i class="fas fa-home"></i></span></a></li>
-                    <li><a href="docs.html"><span class="scorrimentofigo">Documentazione</span></a></li>
-                    <li><a href="resources.html"><span class="scorrimentofigo">Risorse</span></a></li>
-                    <li><a href="../../it#aboutus"><span class="scorrimentofigo">Chi Siamo</span></a></li>
-                    <li class="font-weight-lighter"><a href="../"><img src="../img/bandiera-en.png" alt="" height="30%"> <small>EN</small></a></li>
+                  <li><a href=""><span class="scorrimentofigo"><i class="fas fa-home"></i></span></a></li>
+                  <li><a href="docs"><span class="scorrimentofigo">Documentazione</span></a></li>
+                  <li><a href="resources"><span class="scorrimentofigo">Risorse</span></a></li>
+                  <li><a href="../../it#aboutus"><span class="scorrimentofigo">Chi Siamo</span></a></li>
+                  <li class="font-weight-lighter"><a href="../"><img src="../img/bandiera-en.png" alt="" height="30%"> <small>EN</small></a></li>
+                  <li><button class="dark-mode-btn" id="dm-id" onclick="DarkMode()">Tema Scuro</button></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -64,105 +64,278 @@
     </nav>
 
 
+
     <div class="video-container"> 
       
-      <video class="bg-video" autoplay loop muted playsinline>
-        <source src="../img/programming-intro.mp4" type="video/mp4">
-        <source src="../img/programming-intro.webm" type="video/webm">
-      </video>
+        <video class="bg-video" autoplay loop muted playsinline>
+          <source src="../img/programming-intro.mp4" type="video/mp4">
+          <source src="../img/programming-intro.webm" type="video/webm">
+        </video>
 
-      <div class="container h-100">
-        <div class="d-flex h-100">
-          <div class="w-100 flex-centro-100vh" id="VIM-titolo" style="color: white;">
-            <h1 class="title title-evidenziato">VIM - Vi IMproved</h1>
-            <h4 class="title-evidenziato">VIM tutorial</h4>
-            <h5 class="title-evidenziato">Presented by Sala Musk</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<div>
-  something like get started - download vim - etc
-</div>
-
-<!-- Footer -->
-<footer class="text-center text-white custom-footer-1" style="font-size: 1rem !important;">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <h5 class="text-center text-white mb-3">Contatti</h5>
-      <div class="row">
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/kev1nl1u" role="button"><i class="fab fa-github"></i><br/>Kevin</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://twitter.com/kevinIiu" role="button"><i class="fab fa-twitter"></i><br/>Kevin</a>
-          </section>
-        </div>
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/MatteoBini" role="button"><i class="fab fa-github"></i><br/>Bini</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://twitter.com/matteobini_" role="button"><i class="fab fa-twitter"></i><br/>Bini</a>
-          </section>
-        </div>
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/HSzibo" role="button"><i class="fab fa-github"></i><br/>Zibo</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://www.instagram.com/sebastianozibordi/" role="button"><i class="fab fa-instagram"></i><br/>Zibo</a>
-          </section>
-        </div>
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/DavideSirico" role="button"><i class="fab fa-github"></i><br/>Davide</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://www.instagram.com/davidesirico05/" role="button"><i class="fab fa-instagram"></i><br/>Davide</a>
-          </section>
-        </div>
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>Andrea</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://instagram.com/vmc.andrea" role="button"><i class="fab fa-instagram"></i><br/>Andrea</a>
-          </section>
-        </div>
-        <div class="col-sm">
-          <section class="mb-2">
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>Anton</a>
-            <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-instagram"></i><br/>Anton</a>
-          </section>
-        </div>
-      </div>
-  
-      <!-- Wiki -->
-      <section class="mb-4">
-        <div class="row">
-          <div class="col-lg-6 p-4">
-            <a href="../../it.html"><img src="../img/sala-musk-logo.png" class="img-fluid"></a>
-          </div>
-          <div class="col-lg-6">
-            <div class="flex-centro-100100 p-4">
-              Sala Musk &egrave; un'organizzazione no-profit creata da 6 studenti della classe 3CI-IN dell'ITIS "Enrico Fermi" MN. Fondato il 27/10/2021, il nostro obiettivo &egrave; di creare un mondo di educazione Open Source.
+        <div class="container h-100">
+          <div class="d-flex h-100">
+            <div class="w-100 flex-centro-100vh" id="VIM-titolo" style="color: white;">
+              <h1 class="title title-evidenziato">VIM - Vi IMproved</h1>
+              <h4 class="title-evidenziato">VIM tutorial</h4>
+              <h5 class="title-evidenziato">Presentato da Sala Musk</h5>
             </div>
           </div>
         </div>
-      </section>
-      <a href="../index.html" style="color: white" class="a-hover-none"><img src="../img/bandiera-en.png" height="20px"> <u>Versione in inglese</u></a><br/>
-      <a href="#gototop" style="color: white" class="a-hover-none scrollLink"><u>Torna in alto</u></a>
     </div>
-  
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3);">
-      © 2021 <span style="font-weight: 700;">3CI IN Organization</span> per l'insegnamento. <span class="text-muted">Progetto Open Source.</span></a>
+
+    <div class="body mx-sm-4 px-sm-5 p-4">
+      <h1>Cos'&egrave; VIM?</h1>
+      <p>Vim &egrave; un <b>editor di testo</b> Unix incluso in Linux, BSD e macOS. &Egrave; conosciuto per essere <i>veloce</i> ed <i>efficiente</i>, in parte perch&eacute; &egrave; una piccola applicazione che può essere usata in un terminale (anche se ha una interfaccia grafica), ma soprattutto perch&eacute; pu&ograve; essere <b>controllata interamente con una tastiera</b> senza l'utilizzo di menu o mouse. Ad esempio, per inserire testo in un file, si preme <kbd>I</kbd> e si scrive. Per navigare o per dare un comando (come <i>Salva</i>, <i>Backspace</i>, <i>Home</i>, <i>Fine</i>, ecc...), si preme <kbd>Esc</kbd> sulla tastiera e quindi si preme qualsiasi tasto o combitazione di tasti corrispondente all'azione che si vuole eseguire. &Egrave; un <b>metodo diverso per modificare il testo</b> rispetto a quello che gli utenti moderni si aspettano, ma &egrave; il modo in cui molti gli admin Unix in tutto il globo modifica files di config, changelogs, codici, e altro ancora.
+      <br>
+      Vim &egrave; anche comunemente indicato con <i>Vi</i> perch&eacute; quando era stato scritto alla fine degli anni '70, era l'abbreviazione di <i>visual editor</i>. Prima di Vi, poche persone hanno anche immaginato che un computer possa agire come una sorta di macchina da scrivere interattiva: i file di testo erano modificati con comandi che avrebbero trovato una riga specifica e avrebbero inserito o rimosso il testo; letteralmente tutto il testo era manipolato con quella che equivaleva a una versione rudimentale del menu <i>trova e sostituisci</i>. Vi è stata una boccata d'aria fresca, consentendo agli utenti di accedere a una sessione dello schermo che mostrava loro l'intero file e consentiva loro di modificarlo dal vivo.</p>
+
+
+      <h1>Impara VIM</h1>
+
+      <!-- no mobile -->
+
+      <div id="no-mobile">
+      
+      <!-- https://codepen.io/amosby/pen/bjGjKw -->
+      <div class="canvas-wrapper mb-5">
+
+          
+        <a href="docs" class="canvas" style="text-decoration: none;">
+          <div class="canvas_border">
+            <svg>
+              <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+              <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
+          </div>
+          <div class="canvas_img-wrapper">
+            <img src="../img/documentation.png" class="img-fluid" style="width: 50%; height: auto;">
+          </div>
+          <div class="canvas_copy canvas_copy--left">
+            <span class="canvas_copy_subtitle">VIM</span>
+            <strong class="canvas_copy_title">Documentazione</strong>
+            <span class="canvas_copy_details">Impara VIM con noi</span>
+          </div>
+        </a>
+
+        <div class="mx-5"></div>
+        
+        <a href="resources" class="canvas" style="text-decoration: none;">
+          <div class="canvas_border">
+            <svg>
+              <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+              <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
+          </div>
+          <div class="canvas_img-wrapper">
+            <img src="../img/download.png" class="img-fluid" style="width: 50%; height: auto;">
+          </div>
+          <div class="canvas_copy canvas_copy--left">
+            <span class="canvas_copy_subtitle">VIM</span>
+            <strong class="canvas_copy_title">Risorse</strong>
+            <span class="canvas_copy_details">Scarica le risorse</span>
+          </div>
+        </a>
+
+        <div class="mx-5"></div>
+        
+        <a href="../live-editor/opemvim/tutorial" class="canvas" style="text-decoration: none;">
+          <div class="canvas_border">
+            <svg>
+              <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+              <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
+          </div>
+          <div class="canvas_img-wrapper">
+            <img src="../img/console.png" class="img-fluid" style="width: 50%; height: auto;">
+          </div>
+          <div class="canvas_copy canvas_copy--left">
+            <span class="canvas_copy_subtitle">VIM</span>
+            <strong class="canvas_copy_title">Pratica</strong>
+            <span class="canvas_copy_details">Esercitati con i comandi di VIM</span>
+          </div>
+        </a>
+
+      </div>
+
+      </div>
+
+
+      <!-- no desktop -->
+
+      <div id="no-desktop">
+
+        <a href="docs">
+        <div class="mobile-card-1">
+          <div class="mobile-card-detail">
+            <p class="mobile-card-title p-4">Documentazione</p>
+            <p><center><span class="mobile-card-desc">Impara VIM con noi</span></center></p>
+          </div>
+          <span class="mobile-back-text">
+            Documentazione
+          </span>
+        </div>
+        </a>
+
+        <div class="py-3"></div>
+        
+        <a href="resources">
+        <div class="mobile-card-2">
+          <div class="mobile-card-detail">
+            <p class="mobile-card-title p-4">Risorse</p>
+            <p><center><span class="mobile-card-desc">Scarica le risorse</span></center></p>
+          </div>
+          <span class="mobile-back-text">
+            Risorse
+          </span>
+        </div>
+        </a>
+
+        <div class="py-3"></div>
+        
+        <a href="live-editor/opemvim/tutorial">
+        <div class="mobile-card-3">
+          <div class="mobile-card-detail">
+            <p class="mobile-card-title p-4">Pratica</p>
+            <p><center><span class="mobile-card-desc">Esercitati con i comandi di VIM</span></center></p>
+          </div>
+          <span class="mobile-back-text">
+            Pratica
+          </span>
+        </div>
+        </a>
+
+      </div>
+
+      <h1 class="pt-5 mt-3">Scarica VIM</h1>
+
+      <!-- https://codepen.io/DivineBlow/pen/ZEBqNZb -->
+      <div class="cards-dl">
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="txt"><img src="../img/win-11.png" class="img-fluid" style="height: 1em; width: auto;"> MS Windows</h2>
+                <ul>
+                  <li class="txt"><a href="https://github.com/vim/vim-win32-installer/releases">File recenti e firmati</a></li>
+                  <li class="txt"><a href="https://github.com/vim/vim-win32-installer/releases/download/v8.2.2825/gvim_8.2.2825_x86_signed.exe">Versione stabile gvim_8.2.2825.exe</a></li>
+                  <li class="txt"><a href="https://ftp.nluug.nl/pub/vim/pc/gvim82.exe">Eseguibile standard auto-installante <small>(.exe)</small></a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="face face2 cards-cover">
+            <img src="../img/win-11.png" class="img-fluid" style="width: 35%; height: auto;">
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="txt"><img src="../img/macos.png" class="img-fluid" style="height: 1em; width: auto;"> MacOs</h2>
+              <ul>
+                <li class="txt"><a href="https://github.com/macvim-dev/macvim">MacVim project (versione GUI)</a></li>
+                <li class="txt"><a href="https://formulae.brew.sh/formula/vim">Homebrew (versione da terminale)</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="face face2 cards-cover">
+            <img src="../img/macos.png" class="img-fluid" style="width: 35%; height: auto;">
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="txt"><img src="../img/linux.png" class="img-fluid" style="height: 1em; width: auto;"> Unix</h2>
+              <ul>
+                <li class="txt"><a href="https://www.vim.org/git.php">GitHub</a></li>
+                <li class="txt"><a href="https://www.vim.org/mercurial.php">Mercurial</a></li>
+                <li class="txt"><a href="https://github.com/vim/vim-appimage/releases/latest">Appimage (build giornaliere e gira su molti sistemi Linux)</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="face face2 cards-cover">
+            <img src="../img/linux.png" class="img-fluid" style="width: 40%; height: auto;">
+          </div>
+        </div>
+      </div>
+
     </div>
-  
-  </footer>
-  
-  <div class="text-center text-white p-1 custom-version-bar" style="font-size: 1rem !important;">
-    <p>Sala Musk v1.0 - <span class="text-monospace initialism">Ultima modifica il 11-11-2021</span></p>
+
+<!-- Footer -->
+<footer class="text-center text-white custom-footer-1" style="font-size: 1rem !important;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <h5 class="text-center text-white mb-3">Contatti</h5>
+    <div class="row">
+      <div class="col-sm">
+        <section class="mb-2">
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/kev1nl1u" role="button"><i class="fab fa-github"></i><br/>Kevin</a>
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://twitter.com/kevinIiu" role="button"><i class="fab fa-twitter"></i><br/>Kevin</a>
+        </section>
+      </div>
+      <div class="col-sm">
+        <section class="mb-2">
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/MatteoBini" role="button"><i class="fab fa-github"></i><br/>Bini</a>
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://twitter.com/matteobini_" role="button"><i class="fab fa-twitter"></i><br/>Bini</a>
+        </section>
+      </div>
+      <div class="col-sm">
+        <section class="mb-2">
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/HSzibo" role="button"><i class="fab fa-github"></i><br/>Zibo</a>
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://www.instagram.com/sebastianozibordi/" role="button"><i class="fab fa-instagram"></i><br/>Zibo</a>
+        </section>
+      </div>
+      <div class="col-sm">
+        <section class="mb-2">
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/DavideSirico" role="button"><i class="fab fa-github"></i><br/>Davide</a>
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://www.instagram.com/davidesirico05/" role="button"><i class="fab fa-instagram"></i><br/>Davide</a>
+        </section>
+      </div>
+      <div class="col-sm">
+        <section class="mb-2">
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>Andrea</a>
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://instagram.com/vmc.andrea" role="button"><i class="fab fa-instagram"></i><br/>Andrea</a>
+        </section>
+      </div>
+      <div class="col-sm">
+        <section class="mb-2">
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>Alex</a>
+          <a class="btn btn-outline-light btn-floating" style="width:69px;" target="_blank" href="mailto:aanton@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>Alex</a>
+        </section>
+      </div>
+    </div>
+
+    <!-- Wiki -->
+    <section class="mb-4">
+      <div class="row">
+        <div class="col-lg-6 p-4">
+          <a href="../../it"><img src="../img/sala-musk-logo.png" class="img-fluid"></a>
+        </div>
+        <div class="col-lg-6">
+          <div class="flex-centro-100100 p-4">
+            Sala Musk &egrave; un'organizzazione no-profit creata da 6 studenti della classe 3CI-IN dell'ITIS "Enrico Fermi" MN. Fondato il 27/10/2021, il nostro obiettivo &egrave; di creare un mondo di educazione Open Source.
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="../" style="color: white" class="a-hover-none"><img src="../img/bandiera-en.png" height="20px"> <u>Versione in inglese</u></a><br/>
+    <a href="#gototop" style="color: white" class="a-hover-none scrollLink"><u>Torna in alto</u></a>
   </div>
 
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3);">
+    © 2021 <span style="font-weight: 700;">3CI IN Organization</span> per l'istruzione. <span class="text-muted">Progetto Open Source.</span></a>
+  </div>
 
+</footer>
 
+<div class="text-center text-white p-1 custom-version-bar" style="font-size: 1rem !important;">
+  <p>Sala Musk v1.0 - <span class="text-monospace initialism">Ultima modifica il 11-11-2021</span></p>
+</div>
 
-        
-
-
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -176,13 +349,120 @@
 
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    
+
+
+<!--
+    <script>
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        var nomobile = document.getElementById('no-mobile');
+        nomobile.style.display = 'none';
+        $('.video-container').css("height" , "80vh");
+        $("#VIM-titolo").removeClass('flex-centro-100vh');
+        $("#VIM-titolo").addClass('flex-centro-80vh');
+      }else{
+        var nodesktop = document.getElementById('no-desktop');
+        nodesktop.style.display = 'none';
+      }
+
+      if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+
+      }
+    </script>
+-->
+
+    <!-- script to detect touch screen device 
+      <script>
+        function touch() {
+            return ( 'ontouchstart' in window ) || 
+                   ( navigator.maxTouchPoints > 0 ) ||
+                   ( navigator.msMaxTouchPoints > 0 );
+        }
+      
+        if(touch()) {
+          var nomobile = document.getElementById('no-mobile');
+          nomobile.style.display = 'none';
+          $('.video-container').css("height" , "80vh");
+          $("#VIM-titolo").removeClass('flex-centro-100vh');
+          $("#VIM-titolo").addClass('flex-centro-80vh');
+        }
+        else {
+          var nodesktop = document.getElementById('no-desktop');
+          nodesktop.style.display = 'none';
+        }
+      </script>
+    -->
+    <script>
+      // basically the same thing above but detecting hover functionality
+      if(window.matchMedia('(hover: hover)').matches){
+        var nodesktop = document.getElementById('no-desktop');
+        nodesktop.style.display = 'none';
+      }else{
+        document.getElementById('no-mobile').style.display = 'none';
+        $('.video-container').css("height" , "80vh");
+        $("#VIM-titolo").removeClass('flex-centro-100vh');
+        $("#VIM-titolo").addClass('flex-centro-80vh');
+      }
+    </script>
+
+
+    <!-- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#storing-preferences -->
+    <script>
+      // Select the button
+      const btn = document.querySelector(".dark-mode-btn");
+
+      // Select the theme preference from localStorage
+      const currentTheme = localStorage.getItem("theme");
+
+      // If the current theme in localStorage is "dark"...
+      if (currentTheme == "dark") {
+        // ...then use the .dark-theme class
+        document.body.classList.add("dark-mode");
+        $(".cards-cover").addClass('cards-cover-dark');
+        $(".custom-footer-1").addClass('custom-dark-footer-1');
+        $(".custom-version-bar").addClass('custom-dark-version-bar');
+        $(".canvas_img-wrapper").addClass('canvas_img-wrapper-dark');
+        $(".canvas_copy_title").addClass('text-white');
+        document.getElementById("dm-id").innerHTML = "Tema Chiaro";
+      }
+
+      // Listen for a click on the button 
+      btn.addEventListener("click", function () {
+        // Toggle the .dark-theme class on each click
+        document.body.classList.toggle("dark-mode");
+        $(".cards-cover").toggleClass('cards-cover-dark');
+        $(".custom-footer-1").toggleClass('custom-dark-footer-1');
+        $(".custom-version-bar").toggleClass('custom-dark-version-bar');
+        $(".canvas_img-wrapper").toggleClass('canvas_img-wrapper-dark');
+        $(".canvas_copy_title").toggleClass('text-white');
+
+        // Let's say the theme is equal to light
+        let theme = "light";
+        // If the body contains the .dark-theme class...
+        if (document.body.classList.contains("dark-mode")) {
+          // ...then let's make the theme dark
+          theme = "dark";
+        }
+        // Then save the choice in localStorage
+        localStorage.setItem("theme", theme);
+      });
+
+
+      function DarkMode() {
+          if (document.getElementById("dm-id").innerHTML === "Tema Scuro") {
+            document.getElementById("dm-id").innerHTML = "Tema Chiaro";
+          } else {
+            document.getElementById("dm-id").innerHTML = "Tema Scuro";
+          }
+      }
+    </script>
   
   <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
       $(window).scroll(function() {
         if ($(document).scrollTop() > 50) {
           $('.nav').addClass('affix');
-            console.log("OK");
           } else {
           $('.nav').removeClass('affix');
         }
@@ -199,5 +479,28 @@
       });
   
       </script>
+  <!-- old dark theme script - no local storage saving preferences
+      <script>
+      function DarkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+          if (document.getElementById("dm-id").innerHTML === "Dark Theme") {
+            document.getElementById("dm-id").innerHTML = "Light Theme";
+            $(".cards-cover").addClass('cards-cover-dark');
+            $(".custom-footer-1").addClass('custom-dark-footer-1');
+            $(".custom-version-bar").addClass('custom-dark-version-bar');
+            $(".canvas_img-wrapper").addClass('canvas_img-wrapper-dark');
+            $(".canvas_copy_title").addClass('text-white');
+          } else {
+            document.getElementById("dm-id").innerHTML = "Dark Theme";
+            $(".cards-cover").removeClass('cards-cover-dark');
+            $(".custom-footer-1").removeClass('custom-dark-footer-1');
+            $(".custom-version-bar").removeClass('custom-dark-version-bar');
+            $(".canvas_img-wrapper").removeClass('canvas_img-wrapper-dark');
+            $(".canvas_copy_title").removeClass('text-white');
+          }
+      }
+      </script>
+  -->
     </body>
 </html>
