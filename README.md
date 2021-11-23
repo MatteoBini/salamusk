@@ -22,7 +22,7 @@ Don't <a href="https://salamusk.onrender.com/#aboutus">contact</a> us
 <!------->
 ## ❤️ Thanks
 We'd like to thanks everyone who kindly provided us any type of code we used in our project; whenever possible, the authors are cited with comments in the source code.<br/>
-We are really greateful to <a href="https://github.com/egaga">Henrik Huttunen</a> for making <a href="https://github.com/egaga/openvim"><i>OpenVim</i></a> an open source software allowing and disseminating education.
+We are really greateful to <a href="https://github.com/egaga">Henrik Huttunen</a> for making <a href="https://github.com/egaga/openvim"><i>OpenVim</i></a>, an open source software allowing and disseminating education.
 <!------->
 ## 📃 License <img src="https://creativecommons.org/images/deed/cc_icon_white_x2.png" style="height: 1em;"> <img src="https://creativecommons.org/images/deed/attribution_icon_white_x2.png" style="height: 1em;"> <img src="https://creativecommons.org/images/deed/nc_white_x2.png" style="height: 1em;">
 **_<a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons CC BY-NC</a>_***
