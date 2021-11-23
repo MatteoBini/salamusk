@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sala Musk</title>
-
+    <head>
+    <title>VIM - Sala Musk</title>
+    
     <link rel="icon" type="image/png" href="/img/favicon.png">
 
     <!-- Required meta tags -->
@@ -16,8 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css?=vaccaro" type="text/css">
-    <link rel="stylesheet" href="css/index/index.css?=vaccaro" type="text/css">
+    <!-- dedicated stylesheet -->
+    <link rel="stylesheet" href="css/VIM.css?=vaccaro" type="text/css">
+    <!-- generic stylesheet -->
+    <link rel="stylesheet" href="../css/style.css?=vaccaro" type="text/css">
 
     <!-- font awesome 5 -->
     <script src="https://kit.fontawesome.com/95ae55bd9a.js" crossorigin="anonymous"></script>
@@ -34,85 +36,28 @@
 	  </script>
 
     <!-- AOS css -->
-	<link href="css/aos/aos.css" rel="stylesheet">
+	<link href="../css/AOS/aos.css" rel="stylesheet">
 
-  <meta name="description" content="Sala Musk Homepage">
+  <meta name="description" content="Vim Homepage - Sala Musk">
 
-<!-- scroll debugging css 
-  <style>
-    #scroll {
-      height:40px;
-      position:fixed;
-	      width:100%;
-	      background:#fff;
-	      bottom:0;
-	      text-align:center;
-	      color:red;
-        z-index: 10000;
-      }
-  </style>
--->
+    </head>
+    <body id="gototop">
 
-  </head>
-  <body id="gototop">
-      <!-- scrollbar with progress
-      <div id="progressbar"></div>
-      <script type="text/javascript">
-        $(window).scroll(function(){
-          var scroll = $(window).scrollTop(),
-          dh = $(document).height(),
-          wh = $(window).height();
-          scrollPercent = (scroll / (dh-wh)) * 100;
-          $('#progressbar').css('height', scrollPercent + '%')
-        })
-      </script>
-      -->
-      <!--
-      <script>
-        window.addEventListener("load", function() {
-          if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-            
-          }
-        });
-      </script>
-      -->
-      <script>
-        var a1=0, a2=0, a3=0, a4=0, a5=0, a6=0;
-        window.addEventListener("scroll", function() {
-          if (window.scrollY > (document.getElementById("projects").offsetTop + document.getElementById("projects").offsetHeight) && a1 == 0) {
-            console.log("We're no strangers to love\nYou know the rules and so do I\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand");
-            a1=1;
-          }else if (window.scrollY > (document.getElementById("app").offsetTop + document.getElementById("app").offsetHeight) && a2 == 0) {
-            console.log("Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you");
-            a2=1;
-          }else if (window.scrollY > (document.getElementById("aboutus").offsetTop + document.getElementById("aboutus").offsetHeight) && a3 == 0) {
-            console.log("We've known each other for so long\nYour heart's been aching, but you're too shy to say it\nInside, we both know what's been going on\nWe know the game, and we're gonna play it\nAnd if you ask me how I'm feeling\nDon't tell me you're too blind to see");
-            a3=1;
-          }else if (window.scrollY > (document.getElementById("_ceo").offsetTop + document.getElementById("_ceo").offsetHeight) && a4 == 0) {
-            console.log("Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you");
-            a4=1;
-          }else if (window.scrollY > (document.getElementById("_rro").offsetTop + document.getElementById("_rro").offsetHeight) && a5 == 0) {
-            console.log("We've known each other for so long\nYour heart's been aching, but you're too shy to say it\nInside, we both know what's been going on\nWe know the game, and we're gonna play it\nI just wanna tell you how I'm feeling\nGotta make you understand");
-            a5=1;
-          }else if (window.scrollY > (document.getElementById("_dw").offsetTop + document.getElementById("_dw").offsetHeight) && a6 == 0) {
-            console.log("Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you");
-            a6=1;
-          }
-        });
-      </script>
-
-    <!-- https://codepen.io/albizan/pen/mMWdWZ -->
+        <!-- https://codepen.io/albizan/pen/mMWdWZ -->
 
     <nav class="nav">
         <div class="container">
             <div class="logo">
-              <a href=""><img src="img/sala-musk-logo.png" alt="logo" height="45px"></a>
+                <a href="/"><img src="img/sala-musk-logo.png" alt="logo" height="45px"></a><img src="img/vertical-line-white.png" height="45px"><a href="../VIM/"><img src="img/vim-terminal.png" alt="" height="45px"></a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                  <li><a href="#projects" class="scrollLink"><span class="scorrimentofigo">Our Projects</span></a></li>
-                  <li><a href="#aboutus" class="scrollLink"><span class="scorrimentofigo">About Us</span></a></li>
-                  <li class="font-weight-lighter"><a href="it""><img src="img/bandiera-it.png" alt="" height="30%"> <small>IT</small></a></li>
+                  <li><a href=""><span class="scorrimentofigo"><i class="fas fa-home"></i></span></a></li>
+                  <li><a href="docs"><span class="scorrimentofigo">Docs</span></a></li>
+                  <li><a href="resources"><span class="scorrimentofigo">Resources</span></a></li>
+                  <li><a href="../index#aboutus"><span class="scorrimentofigo">About Us</span></a></li>
+                  <li class="font-weight-lighter"><a href="it/"><img src="img/bandiera-it.png" alt="" height="30%"> <small>IT</small></a></li>
+                  <li><button class="dark-mode-btn" id="dm-id" onclick="DarkMode()">Dark Theme</button></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -122,142 +67,212 @@
             </span>
         </div>
     </nav>
-    
 
 
 
+    <div class="video-container"> 
+      
+        <video class="bg-video" autoplay loop muted playsinline>
+          <source src="img/programming-intro.mp4" type="video/mp4">
+          <source src="img/programming-intro.webm" type="video/webm">
+        </video>
 
-<div class="header" id="projects">
-  <h1 class="projectstext">OUR PROJECTS</h1>
+        <div class="container h-100">
+          <div class="d-flex h-100">
+            <div class="w-100 flex-centro-100vh" id="VIM-titolo" style="color: white;">
+              <h1 class="title title-evidenziato">VIM - Vi IMproved</h1>
+              <h4 class="title-evidenziato">VIM tutorial</h4>
+              <h5 class="title-evidenziato">Presented by Sala Musk</h5>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="body mx-sm-4 px-sm-5 p-4">
+      <h1>What's VIM?</h1>
+      <p>Vim is a Unix <b>text editor</b> that's included in Linux, BSD, and macOS. It's known for being <i>fast</i> and <i>efficient</i>, in part because it's a small application that can run in a terminal (although it also has a graphical interface), but mostly because it can be <b>controlled entirely with the keyboard</b> with no need for menus or a mouse. For instance, to insert text into a file, you press <kbd>I</kbd> and type. To navigate or to issue a command (such as <i>Save</i>, <i>Backspace</i>, <i>Home</i>, <i>End</i>, and so on), you press <kbd>Esc</kbd> on your keyboard and then press whatever key or key combination corresponds with the action you want to take. It's a very <b>different way of editing text</b> compared to what modern computer users expect, but it's the way Unix admins all over the world edit config files, changelogs, scripts, and more.
+      <br>
+      Vim is also commonly referred to as <i>Vi</i> because when it was written in the late 1970s, it was short for <i>visual editor</i>. Before Vi, few people even imagined that a computer could act as a sort of interactive typewriter: text files were edited with commands that would find a specific line and either insert or remove text; literally all text was manipulated with what amounted to a rudimentary version of <i>find-and-replace</i> menu. Vi was a breath of fresh air, enabling users to enter a screen session that showed them their entire file and allowed them to edit it live.</p>
+
+
+      <h1>Learn VIM</h1>
+
+      <!-- no mobile -->
+
+      <div id="no-mobile">
+      
+      
+      <!-- https://codepen.io/amosby/pen/bjGjKw -->
+      <div class="canvas-wrapper mb-5">
+        <center>
+        <div class="row">
+          <div class="col m-5">
+          
+        <a href="docs" class="canvas" style="text-decoration: none;">
+          <div class="canvas_border">
+            <svg>
+              <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+              <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
+          </div>
+          <div class="canvas_img-wrapper">
+            <img src="img/documentation.png" class="img-fluid" style="width: 50%; height: auto;">
+          </div>
+          <div class="canvas_copy canvas_copy--left">
+            <span class="canvas_copy_subtitle">VIM</span>
+            <strong class="canvas_copy_title">Documentation</strong>
+            <span class="canvas_copy_details">Learn VIM with us</span>
+          </div>
+        </a>
+  </div>
+  <div class="col m-5">
+        
+        <a href="resources" class="canvas" style="text-decoration: none;">
+          <div class="canvas_border">
+            <svg>
+              <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+              <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
+          </div>
+          <div class="canvas_img-wrapper">
+            <img src="img/download.png" class="img-fluid" style="width: 50%; height: auto;">
+          </div>
+          <div class="canvas_copy canvas_copy--left">
+            <span class="canvas_copy_subtitle">VIM</span>
+            <strong class="canvas_copy_title">Resources</strong>
+            <span class="canvas_copy_details">Download the resources</span>
+          </div>
+        </a>
 </div>
-
-
-<!-- https://codepen.io/andymerskin/pen/XNMWvQ -->
-<div id="app" class="card-container">
-  <a href="VIM/">
-  <card data-image="img/vim-terminal.png">
-    <h1 slot="header">VIM</h1>
-    <p class="card-p" slot="content">VIM explanation and tutorials.</p>
-  </card>
-  </a>
+<div class="col m-5">
+        
+        <a href="live-editor/openvim/tutorial" class="canvas" style="text-decoration: none;">
+          <div class="canvas_border">
+            <svg>
+              <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+              <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
+          </div>
+          <div class="canvas_img-wrapper">
+            <img src="img/console.png" class="img-fluid" style="width: 50%; height: auto;">
+          </div>
+          <div class="canvas_copy canvas_copy--left">
+            <span class="canvas_copy_subtitle">VIM</span>
+            <strong class="canvas_copy_title">Practice</strong>
+            <span class="canvas_copy_details">Practice with VIM commands</span>
+          </div>
+        </a>
 </div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
-  <script src="css/index/card/card.js"></script>
-<!-- OLD METHOD TO HIDE #APP - IT'S BUGGY
-<script>
-document.addEventListener('scroll', function(){
+</div>
+</center>
+      </div>
 
-    var h = document.documentElement, 
-        b = document.body,
-        st = 'scrollTop',
-        sh = 'scrollHeight';
-
-    var percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-
-    if (percent>22)
-     {
-        $('.card-container').hide();
-     }
-    else
-     {
-        $('.card-container').show();
-     }
-	
-    /* document.getElementById('scroll').textContent = 'scrolled: ' + percent + '%'; */
-});
-</script>
- for scroll debugging
-<div id="scroll">Scroll to see percentage</div>
--->
-
-<!-- hide app when scrolled past aboutus div -->
-<script>
-  window.addEventListener("scroll", function() {
-  var elementTarget = document.getElementById("aboutus");
-  if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-    $('.card-container').addClass('opacity0');
-  }else{
-    $('.card-container').removeClass('opacity0');
-  }
-});
-</script>
+      </div>
 
 
+      <!-- no desktop -->
 
-<!-- https://codepen.io/hexagoncircle/pen/JjRYaZw -->
+      <div id="no-desktop">
 
-<header class="header" id="aboutus"> 
-  <h1>ABOUT US</h1>
-</header>
+        <a href="docs">
+        <div class="mobile-card-1">
+          <div class="mobile-card-detail">
+            <p class="mobile-card-title p-4">Documentation</p>
+            <p><center><span class="mobile-card-desc">Learn VIM with us</span></center></p>
+          </div>
+          <span class="mobile-back-text">
+            DOCS
+          </span>
+        </div>
+        </a>
 
-<main class="main">
-  <section class="section" id="_ceo">
-      <figure class="image-container"><img src="img/ceo-bini.jpg" alt=""/></figure>
-      <article class="content">
-          <h2 class="section-title">CEO</h2><h3>Bini</h3>
-          <p>Bini Matteo is the Chief Executive Officer of Sala Musk. He directed personally the researches for the resources and documentation of the project.</p>
-          <p>Bini, born on 08/03/2004 in Viadana, is an aspiring student of 3CI IN at ITIS "Enrico Fermi" Mantua. He has competences in Python (Kivy, KivyMD, Tkinter), JavaScript and Node.js with Express for backend infrastructure, HTML, CSS, file managing, txt, csv and json database managing, rest apis managing, Linux bash commands and basic C skills. During his career, he reached 2<sup>nd</sup> position in national team OPS (Problem Solving) tournaments.</p>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:binim@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/MatteoBini" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://twitter.com/matteobini_" role="button"><i class="fab fa-twitter"></i><br/>Twitter</a>
-      </article>
-  </section>
-  <section class="section" id="_rro">
-      <figure class="image-container"><img src="img/rro-kevin_vaccaro.jpg" alt=""/></figure>
-      <article class="content">
-          <h2 class="section-title">Online Resources Team</h2><h3>Kevin & Andrea</h3>
-          <p>The online resources department deals with online services, including this website. It's composed by Kevin Liu <small>(right)</small> and Andrea Vaccaro <small>(left)</small>.</p>
-          <p>Kevin, born on 01/01/2005 in Castelfranco Veneto, is very interested in front-end developing, in particular HTML and CSS. He has also basic competences in C, JavaScript, Python and good at copying Stack Overflow and Codepen codes. He defines himself as an Open Source Codes Collage Artist (OSCCA).
-            <blockquote class="blockquote" style="font-size: 0.9em;">"You miss 100&#37; of the shots you don't take <small>— Wayne Gretzky <small>— Michael Scott</small></small>"
-              <footer class="blockquote-footer">Kevin Liu</footer>
-            </blockquote></p>
-          </p>
-          <p>Andrea, born on 27/12/2005 in Casalmaggiore, has experence in front-end and back-end developing. He can code in different languages, including C, HTML5, CSS3, JavaScript and basic programs in Python. He was part of the OPS team that reached 2<sup>nd</sup> in the national tournament.</p>
-          <p>They're both ambitious students of 3CI IN at ITIS "E. Fermi" Mantua.</p>
-          <p style="font-size: 1.2rem;">Contact Kevin</p>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:cliu@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/kev1nl1u" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://twitter.com/kevinIiu" role="button"><i class="fab fa-twitter"></i><br/>Twitter</a>
-          <p style="font-size: 1.2rem;">Contact Andrea</p>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:vaccaroa@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/AndreaCrazyProgrammerPazzo" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
-          <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://instagram.com/vmc.andrea" role="button"><i class="fab fa-instagram"></i><br/>IG</a>
-    </article>
-  </section>
-  <section class="section" id="_dw">
-      <figure class="image-container"><img src="img/dw-anton_zibo_sirico.jpg" alt=""/></figure>
-      <article class="content">
-        <h2 class="section-title">Documentation Writers</h2><h3>Seba, Davide & Anton</h3>
-        <p>The Documentation Writers Team is composed by Sebastiano Zibordi <small>(right)</small>, Davide Sirico <small>(center)</small> and Alessandro Anton <small>(left)</small>. With Bini's coordination, the team made all the researches of the projects and wrote the documentations.</p>
-        <p>Sebastiano Zibordi, born on 25/10/2005 in Mantua, for his friends <i>Zibo</i>, is part of the 3CIIN class of the ITIS "E. Fermi" Mantua. He has basic knowledge in C, HTML, Python and pentesting.</p>
-        <p>Davide Sirico, for Culpo "<b>Surico</b>", born on 02/04/2005 in Mantua, is a member of the 3CIIN class of the ITIS "E. Fermi" school. He has a good knowledge of Python, Linux infrastructures and has 2 certifications in Scatch. 
-        He is also capable of programming in C and has experience in HTML.<br/>
-        <blockquote class="blockquote">"My programs don't have bugs, they just have unexpected features"
-          <footer class="blockquote-footer">Davide Sirico</footer>
-        </blockquote></p>
-        <p>Alessandro Anton, born on 11/07/2005 in Pieve di Coriano, is a very peculiar boy who studies at ITIS "E. Fermi" Mantua with the goal of dominating the entire world through realistic physics in programs. With HTML, CSS, JavaScript, basic knowledge of C and C# in his mind, he has managed to move one cube up by 1 unit. He himself likes to demonstrate this achievement with glory and honor to others.</p>
-        <p style="font-size: 1.2rem;">Contact Sebastiano</p>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:szibordi@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/HSzibo" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://www.instagram.com/sebastianozibordi/" role="button"><i class="fab fa-instagram"></i><br/>IG</a>
-        <p style="font-size: 1.2rem;">Contact Davide</p>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:dsirico@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://www.instagram.com/davidesirico05/" role="button"><i class="fab fa-instagram"></i><br/>IG</a>
-        <p style="font-size: 1.2rem;">Contact Alessandro</p>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="mailto:aanton@fermimn.edu.it" role="button"><i class="fas fa-envelope"></i><br/>E-mail</a>
-        <a class="btn btn-outline-light btn-floating m-1" style="width:75px;" target="_blank" href="https://github.com/NewAlexGamer" role="button"><i class="fab fa-github"></i><br/>GitHub</a>
-      </article>
-    </section>
-</main>
+        <div class="py-3"></div>
+        
+        <a href="resources">
+        <div class="mobile-card-2">
+          <div class="mobile-card-detail">
+            <p class="mobile-card-title p-4">Resources</p>
+            <p><center><span class="mobile-card-desc">Download the resources</span></center></p>
+          </div>
+          <span class="mobile-back-text">
+            Resources
+          </span>
+        </div>
+        </a>
 
+        <div class="py-3"></div>
+        
+        <a href="live-editor/openvim/tutorial">
+        <div class="mobile-card-3">
+          <div class="mobile-card-detail">
+            <p class="mobile-card-title p-4">Practice</p>
+            <p><center><span class="mobile-card-desc">Practice with VIM commands</span></center></p>
+          </div>
+          <span class="mobile-back-text">
+            Practice
+          </span>
+        </div>
+        </a>
 
+      </div>
 
+      <h1 class="pt-5 mt-3">Download VIM</h1>
 
+      <!-- https://codepen.io/DivineBlow/pen/ZEBqNZb -->
+      <div class="cards-dl">
 
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="txt"><img src="img/win-11.png" class="img-fluid" style="height: 1em; width: auto;"> MS Windows</h2>
+                <ul>
+                  <li class="txt"><a href="https://github.com/vim/vim-win32-installer/releases">Recent and signed files</a></li>
+                  <li class="txt"><a href="https://github.com/vim/vim-win32-installer/releases/download/v8.2.2825/gvim_8.2.2825_x86_signed.exe">Stable version gvim_8.2.2825.exe</a></li>
+                  <li class="txt"><a href="https://ftp.nluug.nl/pub/vim/pc/gvim82.exe">Standard self-installing executable</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="face face2 cards-cover">
+            <img src="img/win-11.png" class="img-fluid" style="width: 35%; height: auto;">
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="txt"><img src="img/macos.png" class="img-fluid" style="height: 1em; width: auto;"> MacOs</h2>
+              <ul>
+                <li class="txt"><a href="https://github.com/macvim-dev/macvim">MacVim project (GUI version)</a></li>
+                <li class="txt"><a href="https://formulae.brew.sh/formula/vim">Homebrew (terminal version)</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="face face2 cards-cover">
+            <img src="img/macos.png" class="img-fluid" style="width: 35%; height: auto;">
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="txt"><img src="img/linux.png" class="img-fluid" style="height: 1em; width: auto;"> Unix</h2>
+              <ul>
+                <li class="txt"><a href="https://www.vim.org/git.php">GitHub</a></li>
+                <li class="txt"><a href="https://www.vim.org/mercurial.php">Mercurial</a></li>
+                <li class="txt"><a href="https://github.com/vim/vim-appimage/releases/latest">Appimage (build daily and runs on many Linux systems)</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="face face2 cards-cover">
+            <img src="img/linux.png" class="img-fluid" style="width: 40%; height: auto;">
+          </div>
+        </div>
+      </div>
 
-
+    </div>
 
 
 
@@ -309,7 +324,7 @@ document.addEventListener('scroll', function(){
       <section class="mb-4">
         <div class="row">
           <div class="col-lg-6 p-4">
-            <a href=""><img src="img/sala-musk-logo.png" class="img-fluid"></a>
+            <a href="/"><img src="img/sala-musk-logo.png" class="img-fluid"></a>
           </div>
           <div class="col-lg-6">
             <div class="flex-centro-100100 p-4">
@@ -318,7 +333,7 @@ document.addEventListener('scroll', function(){
           </div>
         </div>
       </section>
-      <a href="it" style="color: white" class="a-hover-none"><img src="img/bandiera-it.png" height="20px"> <u>Italian version</u></a><br/>
+      <a href="it/" style="color: white" class="a-hover-none"><img src="img/bandiera-it.png" height="20px"> <u>Italian version</u></a><br/>
       <a href="#gototop" style="color: white" class="a-hover-none scrollLink"><u>Go to top</u></a>
     </div>
   
@@ -331,56 +346,173 @@ document.addEventListener('scroll', function(){
   <div class="text-center text-white p-1 custom-version-bar" style="font-size: 1rem !important;">
     <p>Sala Musk v1.0 - <span class="text-monospace initialism">Last edited on 11-11-2021</span></p>
   </div>
-  
-  
-  
-  
-          
-  
-  
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <!-- inizialize AOS  -->
-      <script type="text/javascript" src="css/AOS/aos.js"></script>
-      <script type="text/javascript">
-          AOS.init();
-      </script>
-  
-      <!-- Jquery needed -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
-    <!-- Function used to shrink nav bar removing paddings and adding black background -->
-      <script>
-        $(window).scroll(function() {
-          if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-            } else {
-            $('.nav').removeClass('affix');
-          }
-        });
-      </script>
-      <!-- navbar script -->
-        <script>
-          $('.navTrigger').click(function () {
-        $(this).toggleClass('active');
-        $("#mainListDiv").toggleClass("show_list");
-        $("#mainListDiv").fadeIn();
-    
-        });
-    
-        </script>
 
-        <!-- failed attempt to change scrollbar border-radius when reached the bottom. JS you won the battle, but not the war.
-        <script>
-          $(window).scroll(function() {
-            if($(window).scrollTop() + $(window).height() == $(document).height()) {
     
-            }
-        });
-        </script>
-        -->
-      </body>
-  </html>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- inizialize AOS  -->
+    <script type="text/javascript" src="../css/AOS/aos.js"></script>
+    <script type="text/javascript">
+	    AOS.init();
+    </script>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    
+
+
+<!--
+    <script>
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        var nomobile = document.getElementById('no-mobile');
+        nomobile.style.display = 'none';
+        $('.video-container').css("height" , "80vh");
+        $("#VIM-titolo").removeClass('flex-centro-100vh');
+        $("#VIM-titolo").addClass('flex-centro-80vh');
+      }else{
+        var nodesktop = document.getElementById('no-desktop');
+        nodesktop.style.display = 'none';
+      }
+
+      if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+
+      }
+    </script>
+-->
+
+    <!-- script to detect touch screen device 
+      <script>
+        function touch() {
+            return ( 'ontouchstart' in window ) || 
+                   ( navigator.maxTouchPoints > 0 ) ||
+                   ( navigator.msMaxTouchPoints > 0 );
+        }
+      
+        if(touch()) {
+          var nomobile = document.getElementById('no-mobile');
+          nomobile.style.display = 'none';
+          $('.video-container').css("height" , "80vh");
+          $("#VIM-titolo").removeClass('flex-centro-100vh');
+          $("#VIM-titolo").addClass('flex-centro-80vh');
+        }
+        else {
+          var nodesktop = document.getElementById('no-desktop');
+          nodesktop.style.display = 'none';
+        }
+      </script>
+    -->
+    <script>
+      // basically the same thing above but detecting hover functionality
+      if(window.matchMedia('(hover: hover)').matches){
+        var nodesktop = document.getElementById('no-desktop');
+        nodesktop.style.display = 'none';
+      }else{
+        document.getElementById('no-mobile').style.display = 'none';
+        $('.video-container').css("height" , "80vh");
+        $("#VIM-titolo").removeClass('flex-centro-100vh');
+        $("#VIM-titolo").addClass('flex-centro-80vh');
+      }
+    </script>
+
+
+    <!-- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#storing-preferences -->
+    <script>
+      // Select the button
+      const btn = document.querySelector(".dark-mode-btn");
+
+      // Select the theme preference from localStorage
+      const currentTheme = localStorage.getItem("theme");
+
+      // If the current theme in localStorage is "dark"...
+      if (currentTheme == "dark") {
+        // ...then use the .dark-theme class
+        document.body.classList.add("dark-mode");
+        $(".cards-cover").addClass('cards-cover-dark');
+        $(".custom-footer-1").addClass('custom-dark-footer-1');
+        $(".custom-version-bar").addClass('custom-dark-version-bar');
+        $(".canvas_img-wrapper").addClass('canvas_img-wrapper-dark');
+        $(".canvas_copy_title").addClass('text-white');
+        document.getElementById("dm-id").innerHTML = "Light Theme";
+      }
+
+      // Listen for a click on the button 
+      btn.addEventListener("click", function () {
+        // Toggle the .dark-theme class on each click
+        document.body.classList.toggle("dark-mode");
+        $(".cards-cover").toggleClass('cards-cover-dark');
+        $(".custom-footer-1").toggleClass('custom-dark-footer-1');
+        $(".custom-version-bar").toggleClass('custom-dark-version-bar');
+        $(".canvas_img-wrapper").toggleClass('canvas_img-wrapper-dark');
+        $(".canvas_copy_title").toggleClass('text-white');
+
+        // Let's say the theme is equal to light
+        let theme = "light";
+        // If the body contains the .dark-theme class...
+        if (document.body.classList.contains("dark-mode")) {
+          // ...then let's make the theme dark
+          theme = "dark";
+        }
+        // Then save the choice in localStorage
+        localStorage.setItem("theme", theme);
+      });
+
+
+      function DarkMode() {
+          if (document.getElementById("dm-id").innerHTML === "Dark Theme") {
+            document.getElementById("dm-id").innerHTML = "Light Theme";
+          } else {
+            document.getElementById("dm-id").innerHTML = "Dark Theme";
+          }
+      }
+    </script>
+  
+  <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+          $('.nav').addClass('affix');
+          } else {
+          $('.nav').removeClass('affix');
+        }
+      });
+    </script>
+    <!-- navbar script -->
+      <script>
+        $('.navTrigger').click(function () {
+      $(this).toggleClass('active');
+      console.log("Clicked menu");
+      $("#mainListDiv").toggleClass("show_list");
+      $("#mainListDiv").fadeIn();
+  
+      });
+  
+      </script>
+  <!-- old dark theme script - no local storage saving preferences
+      <script>
+      function DarkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+          if (document.getElementById("dm-id").innerHTML === "Dark Theme") {
+            document.getElementById("dm-id").innerHTML = "Light Theme";
+            $(".cards-cover").addClass('cards-cover-dark');
+            $(".custom-footer-1").addClass('custom-dark-footer-1');
+            $(".custom-version-bar").addClass('custom-dark-version-bar');
+            $(".canvas_img-wrapper").addClass('canvas_img-wrapper-dark');
+            $(".canvas_copy_title").addClass('text-white');
+          } else {
+            document.getElementById("dm-id").innerHTML = "Dark Theme";
+            $(".cards-cover").removeClass('cards-cover-dark');
+            $(".custom-footer-1").removeClass('custom-dark-footer-1');
+            $(".custom-version-bar").removeClass('custom-dark-version-bar');
+            $(".canvas_img-wrapper").removeClass('canvas_img-wrapper-dark');
+            $(".canvas_copy_title").removeClass('text-white');
+          }
+      }
+      </script>
+  -->
+    </body>
+</html>
