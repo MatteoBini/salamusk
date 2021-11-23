@@ -1,38 +1,6 @@
-/* stylesheet of generic parts, like navbar, footer, scrollbar, etc... */
-
-
-
-
-
-*{
-    padding: 0;
-    margin: 0;
-}
-
-/* scorrimento sotto le scritte figo */
-.scorrimentofigo {
-    position: relative;
-    text-decoration: none;
-  }
-  .scorrimentofigo:after {
-    content: "";
-    height: 1px;
-    bottom: -4px;
-    position: absolute;
-    left: 5%;
-    right: 95%;
-    background: #eeeeee;
-    transition: right 0.25s ease-in-out;
-  }
-  .scorrimentofigo:hover:after {
-    right: 5%;
-  }
-
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
-
 /* Navbar section */
 
-.nav {
+.custom_nav {
     width: 100%;
     height: 65px;
     position: fixed;
@@ -40,28 +8,28 @@
     text-align: center;
 }
 
-.nav div.logo {
+.custom_nav div.custom_logo {
     float: left;
     width: auto;
     height: auto;
     padding-left: 1rem;
 }
 
-.nav div.logo a {
+.custom_nav div.custom_logo a {
     text-decoration: none;
     color: #fff;
 }
 
-.nav div.logo a:hover {
+.custom_nav div.custom_logo a:hover {
     color: #eeeeee;
 }
 
-.nav div.main_list {
+.custom_nav div.custom_main_list {
     height: 65px;
     float: right;
 }
 
-.nav div.main_list ul {
+.custom_nav div.custom_main_list ul {
     width: 100%;
     height: 65px;
     display: flex;
@@ -70,21 +38,21 @@
     padding: 0;
 }
 
-.nav div.main_list ul li {
+.custom_nav div.custom_main_list ul li {
     width: auto;
     height: 65px;
     padding: 0;
     padding-right: 2.5rem;
 }
 
-.nav div.main_list ul li a {
+.custom_nav div.custom_main_list ul li a {
     text-decoration: none;
     color: #fff;
     line-height: 65px;
     font-size: 1.5rem;
 }
 
-.nav div.main_list ul li a:hover {
+.custom_nav div.custom_main_list ul li a:hover {
     color: #eeeeee;
 }
 
@@ -97,7 +65,7 @@
     display: none;
 }
 
-.nav {
+.custom_nav {
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -109,7 +77,7 @@
 /* Media query section */
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-    .container {
+    .custom_container {
         margin: 0;
     }
 }
@@ -118,19 +86,19 @@
     .navTrigger {
         display: block;
     }
-    .nav div.logo {
+    .custom_nav div.custom_logo {
         margin-left: 15px;
     }
-    .nav div.main_list {
+    .custom_nav div.custom_main_list {
         width: 100%;
         height: 0;
         overflow: hidden;
     }
-    .nav div.show_list {
+    .custom_nav div.show_list {
         height: auto;
         display: none;
     }
-    .nav div.main_list ul {
+    .custom_nav div.custom_main_list ul {
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -141,16 +109,16 @@
         /*same background color of navbar*/
         background-position: center top;
     }
-    .nav div.main_list ul li {
+    .custom_nav div.custom_main_list ul li {
         width: 100%;
         text-align: right;
     }
-    .nav div.main_list ul li a {
+    .custom_nav div.custom_main_list ul li a {
         text-align: center;
         width: 100%;
         padding: 20px;
     }
-    .nav div.media_button {
+    .custom_nav div.media_button {
         display: block;
     }
 }
@@ -353,27 +321,16 @@
     background-color: #111;
 }
 
+.docs1{
+    background-image: url('../img/docs-title.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    background-attachment: fixed;
+    height: 65vh;
+}
 
-
-    .flex-centro-100100{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    }
-
-    .flex-centro-100vh{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    text-shadow: 0px 0px 20px white;
-    }
-
-  
-
-  .custom-footer-1{
+.custom-footer-1{
     background-image: linear-gradient(to bottom, #019833, #005d04);
   }
   
@@ -387,6 +344,13 @@
   .custom-dark-version-bar{
     background-image: linear-gradient(to left, #d428ff, #b31fc7, #d428ff) !important;
   }
+
+.flex-centro-100100{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
 
   /* scrollbar */
@@ -480,3 +444,98 @@
     margin-right: 0 !important;
     text-align: center;
 }
+body{
+    position: relative;
+}
+
+div.col-8 div{
+    height: 500px;
+}
+
+.scroll-menu{
+    position: sticky;
+    top:0;
+}
+
+.menuscroll{
+    width: 20%;
+}
+
+.pt-70px-1{
+    padding-top: 70px;
+    animation: move-down-1 0.5s;
+}
+@keyframes move-down-1 {
+    0% {
+        transform: translateY(-10px);
+     }
+     100% {
+        transform: translateY(0);
+     }
+}
+
+.sezioni{
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+/* https://codepen.io/simeydotme/pen/rVqrrN */
+
+.hr {
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: relative;
+  margin-bottom: 0em;
+  padding: 2em 0;
+}
+.hr:after, .hr:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 50%;
+  left: 0;
+}
+.hr:before {
+  background: linear-gradient(90deg, #10111F 0%, #10111F 50%, transparent 50%, transparent 100%);
+  background-size: 15px;
+  background-position: center;
+  z-index: 1;
+}
+.hr:after {
+  transition: opacity 0.3s ease, -webkit-animation 0.3s ease;
+  transition: opacity 0.3s ease, animation 0.3s ease;
+  transition: opacity 0.3s ease, animation 0.3s ease, -webkit-animation 0.3s ease;
+  background: linear-gradient(to right, #62efab 5%, #F2EA7D 15%, #F2EA7D 25%, #FF8797 35%, #FF8797 45%, #e1a4f4 55%, #e1a4f4 65%, #82fff4 75%, #82fff4 85%, #62efab 95%);
+  background-size: 200%;
+  background-position: 0%;
+  -webkit-animation: bar 15s linear infinite;
+          animation: bar 15s linear infinite;
+}
+@-webkit-keyframes bar {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+@keyframes bar {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+
