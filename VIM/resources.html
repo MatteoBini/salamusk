@@ -2,6 +2,9 @@
 <html>
     <head>
     <title>Resources - VIM</title>
+    
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,10 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!-- dedicated stylesheet -->
-    <link rel="stylesheet" href="css/VIM.css" type="text/css">
-    <link rel="stylesheet" href="css/resource.css">
+    <link rel="stylesheet" href="css/VIM.css?=vaccaro" type="text/css">
+    <link rel="stylesheet" href="css/resource.css?=vaccaro">
     <!-- generic stylesheet -->
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css?=vaccaro" type="text/css">
 
     <!-- font awesome 5 -->
     <script src="https://kit.fontawesome.com/95ae55bd9a.js" crossorigin="anonymous"></script>
@@ -33,11 +36,18 @@
 	    });
 	  </script>
 
+    <meta name="description" content="Vim resources - Sala Musk">
+
     <!-- AOS css -->
     <link href="../css/AOS/aos.css" rel="stylesheet">
-  <script type="text/javascript" src="javascript/resources.js"></script>
+  <script type="text/javascript" src="javascript/resources.js?=vaccaro"></script>
     </head>
     <body id="gototop">
+
+      <div class="bg0"></div>
+      <div class="bg1"></div>
+      <div class="bg2"></div>
+      <div class="bg3"></div>
 
         <!-- https://codepen.io/albizan/pen/mMWdWZ -->
 
@@ -67,33 +77,36 @@
 
     <div id="no-mobile">
 
-    <table id="tabella-bottone" align="left">
-      <tr>
-        <td align="center" class="titoletti" onmouseover="spostatesto()" onmouseout="spostatesti()">Presentazione</td>
-      </tr>
-      <tr>
-        <td align="center"><a href="downlodable/Esposizione.pptx" download="esposizione"><button class="bottoni-download" onmouseover="spostatesto()" onmouseout="spostatesti()">Download</button></a></td>
-      </tr>
-      <tr>
-        <td align="center" class="titoletti" onmouseover="spostatesto2()" onmouseout="spostatesti2()">Palindromo</td>
-      </tr>
-      <tr>
-        <td align="center" ><a href="downlodable/palindrome.pdf" download="palindromo"><button class="bottoni-download" onmouseover="spostatesto2()" onmouseout="spostatesti2()">Download</button></a></td>
-      </tr>
-      <tr>
-        <td align="center" class="titoletti" onmouseover="spostatesto3()" onmouseout="spostatesti3()">Documentazione</td>
-      </tr>
-      <tr>
-        <td align="center"><a href="downlodable/Docs.docx" download="documentazione"><button class="bottoni-download" onmouseover="spostatesto3()" onmouseout="spostatesti3()">Download</button></a></td>
-      </tr>
-    </table>
+    <div id="tabella-bottone">
 
-    <img src="../VIM/img/resources_presentazione.png" class="img1">
-    <img src="../VIM/img/resources_palindromo.jpg" class="img2">
-    <img src="../VIM/img/resources_documentation.jpg" class="img3">
+      <div align="center" class="titoletti" onmouseover="spostatesto()" onmouseout="spostatesti()">Presentation</div>
 
-    <div style="height: 1000px;">
+      <div align="center"><a href="downlodable/Esposizione.pdf" download="Lecture"><button class="bottoni-download" onmouseover="spostatesto()" onmouseout="spostatesti()">Download</button></a></div>
+
+      <div align="center" class="titoletti" onmouseover="spostatesto2()" onmouseout="spostatesti2()">Docs</div>
+
+      <div align="center" ><a href="downlodable/Docs.pdf" download="Docs"><button class="bottoni-download" onmouseover="spostatesto2()" onmouseout="spostatesti2()">Download</button></a></div>
+
+      <div align="center" class="titoletti" onmouseover="spostatesto3()" onmouseout="spostatesti3()">Palindrome C</div>
+
+      <div align="center"><a href="downlodable/palindrome.pdf" download="Palindrome"><button class="bottoni-download" onmouseover="spostatesto3()" onmouseout="spostatesti3()">Download</button></a></div>
+
+      <div align="center" class="titoletti" onmouseover="spostatesto4()" onmouseout="spostatesti4()">Website files</div>
+
+      <div align="center"><a href=""><button class="bottoni-download" onmouseover="spostatesto4()" onmouseout="spostatesti4()"><i class="fab fa-github"></i> GitHub</button></a></div>
+
+      <div align="center" class="titoletti" onmouseover="spostatesto5()" onmouseout="spostatesti5()">Vim Cheatsheet</div>
+
+      <div align="center"><a href="downlodable/Vim_cheatsheet.zip" download="Vim_cheatsheet"><button class="bottoni-download" onmouseover="spostatesto5()" onmouseout="spostatesti5()">Download</button></a></div>
+
+      <img src="img/resources_presentazione.png" class="img1">
+      <img src="img/resources_documentation.jpg" class="img2">
+      <img src="img/resources_palindromo.jpg" class="img3">
+      <img src="img/resources_github-repo.jpg" class="img4">
+      <img src="img/resources_cheatsheet_1.jpg" class="img5">
     </div>
+
+    
 
     </div>
 
@@ -105,7 +118,7 @@
 
         <div class="dl-divider" style="margin-top: 10px;">
           <h1 class="p-2" style="text-shadow:-1px 1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;">Documentation</h1>
-          <p>Our documents about VIM (long but it has what you need).</p>
+          <p>Our documents aboutim (long but it has whachu need).</p>
           <div class="p-3">
             <a href="" download="SalaMusk-VIM_Documentation" class="mobile-bottoni-download p-2 px-5">Download</a>
           </div>
@@ -113,7 +126,7 @@
 
         <div class="dl-divider" style="margin-top: 10px;">
           <h1 class="p-2" style="text-shadow:-1px 1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;">Presentation</h1>
-          <p>Our presentation about VIM (just the essential informations but definitely prettier than the documentation).</p>
+          <p>Our presentation about Vim (just the essential informations but definitely prettier than the documentation).</p>
           <div class="p-3">
             <a href="" download="SalaMusk-VIM_Presentation" class="mobile-bottoni-download p-2 px-5">Download</a>
           </div>
@@ -126,10 +139,17 @@
           <h1 style="text-shadow:-1px 1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;" class="p-2">Website files</h1>
           <p style="text-shadow:-1px 1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;">Yes, you can download the whole website, on GitHub.</p>
           <div class="p-3">
-            <a href="" download="SalaMusk-VIM_Website" class="mobile-bottoni-download p-2 px-5">Download</a>
+            <a href="" download="SalaMusk-VIM_Website" class="mobile-bottoni-download p-2 px-5"><i class="fab fa-github"></i> GitHub</a>
           </div>
         </div>
 
+        <div class="dl-divider" style="margin-top: 10px;">
+          <h1 class="p-2" style="text-shadow:-1px 1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px -1px 0 #000;">Vim Cheatsheet</h1>
+          <p>Cheatsheet of useful commands.</p>
+          <div class="p-3">
+            <a href="downlodable/Vim_cheatsheet.zip" download="SalaMusk-VIM_Cheatsheet" class="mobile-bottoni-download p-2 px-5">Download</a>
+          </div>
+        </div>
     </div>
     
 
@@ -187,7 +207,7 @@
           </div>
           <div class="col-lg-6">
             <div class="flex-centro-100100 p-4">
-              Sala Musk is a no-profit organization created by 6 students of the 3CI-IN of the ITIS "Enrico Fermi" MN. Started on 27/10/2021, our mission is to build an Open Source learning world.
+              Sala Musk is a no-profit organization created by 6 students of the 3CI&nbsp;IN of the ITIS "Enrico Fermi" MN. Started on 27/10/2021, our mission is to build an Open Source learning world.
             </div>
           </div>
         </div>
@@ -197,7 +217,7 @@
     </div>
   
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3);">
-      &copy; 2021 <span style="font-weight: 700;">3CI IN Organization</span> for education. <span class="text-muted">Open Source project.</span></a>
+      <span style="font-weight: 700;">3CI IN Organization</span> for education. <span class="text-muted">Open Source Project &copy; CC BY-NC 2021 Sala Musk.</span></a>
     </div>
   
   </footer>
@@ -235,7 +255,7 @@
         }else{
           document.getElementById('no-mobile').style.display = 'none';
         }
-
+        console.log('width = ' + $(document).width());
         if($(document).width() > 1075){
           document.getElementById('no-desktop').style.display = 'none';
           document.getElementById('no-mobile').style.display = 'block';
@@ -256,7 +276,11 @@
       // If the current theme in localStorage is "dark"...
       if (currentTheme == "dark") {
         // ...then use the .dark-theme class
+        document.body.classList.add("dark-mode");
         $('#no-desktop').addClass('no-desktop-dark');
+        $('.bg0').addClass('bg0-dark');
+        $('.bg1').addClass('bg1-dark');
+        $('.bg2').addClass('bg2-dark');
         $(".custom-footer-1").addClass('custom-dark-footer-1');
         $(".custom-version-bar").addClass('custom-dark-version-bar');
         document.getElementById("dm-id").innerHTML = "Light Theme";
@@ -267,6 +291,9 @@
         // Toggle the .dark-theme class on each click
         document.body.classList.toggle("dark-mode");
         $("#no-desktop").toggleClass('no-desktop-dark');
+        $(".bg0").toggleClass('bg0-dark');
+        $(".bg1").toggleClass('bg1-dark');
+        $(".bg2").toggleClass('bg2-dark');
         $(".custom-footer-1").toggleClass('custom-dark-footer-1');
         $(".custom-version-bar").toggleClass('custom-dark-version-bar');
 

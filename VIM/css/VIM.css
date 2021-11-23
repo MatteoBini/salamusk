@@ -375,6 +375,17 @@ strong {
   background-image: url("../img/terminal.png");
 }
 
+.mobile-card-4 {
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  height: 250px;
+  background: #ab09b1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("../img/mobile-controller.png");
+}
+
 .mobile-card-detail {
   color: #fff;
 }

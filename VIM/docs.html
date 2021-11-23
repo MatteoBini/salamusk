@@ -1,71 +1,334 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Docs - VIM</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <head>
+  <title>Docs - VIM</title>
 
-    <!-- Ubuntu GFonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/VIM.css?=vaccaro" type="text/css">
+  <link rel="stylesheet" href="css/docs.css?=vaccaro" type="text/css">
+  <!-- font awesome 5 -->
+  <script src="https://kit.fontawesome.com/95ae55bd9a.js" crossorigin="anonymous"></script>
 
-    <!-- dedicated stylesheet -->
-    <link rel="stylesheet" href="css/VIM.css" type="text/css">
-    <!-- generic stylesheet -->
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <!-- scrollLink - Scroll to Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 1000);
+      });
+    });
+  </script>
 
-    <!-- font awesome 5 -->
-    <script src="https://kit.fontawesome.com/95ae55bd9a.js" crossorigin="anonymous"></script>
+  <!-- AOS css -->
+<link href="../css/AOS/aos.css" rel="stylesheet">
 
-    <!-- scrollLink - Scroll to Link -->
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	  <script type="text/javascript">
-	    $(document).ready(function(){
-        $( "a.scrollLink" ).click(function( event ) {
-    	    event.preventDefault();
-          $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 1000);
-    	  });
-	    });
-	  </script>
+  <meta name="description" content="Vim Docs - Sala Musk">
+  </head>
+  <body data-spy="scroll" data-target="#scrollmenu" data-offset="1" id="gototop">
 
-    <!-- AOS css -->
-    <link href="../css/AOS/aos.css" rel="stylesheet">
+    <nav class="custom_nav">
+      <div class="container">
+          <div class="custom_logo">
+              <a href="/"><img src="img/sala-musk-logo.png" alt="logo" height="45px"></a><img src="img/vertical-line-white.png" height="45px"><a href="../VIM/"><img src="img/vim-terminal.png" alt="" height="45px"></a>
+          </div>
+          <div id="mainListDiv" class="custom_main_list">
+              <ul class="navlinks">
+                <li><a href="../VIM/"><span class="scorrimentofigo"><i class="fas fa-home"></i></span></a></li>
+                <li><a href="docs"><span class="scorrimentofigo">Docs</span></a></li>
+                <li><a href="resources"><span class="scorrimentofigo">Resources</span></a></li>
+                <li><a href="../index#aboutus"><span class="scorrimentofigo">About Us</span></a></li>
+                <li class="font-weight-lighter"><a href="it/"><img src="img/bandiera-it.png" alt="" height="30%"> <small>IT</small></a></li>
+                <li><button class="dark-mode-btn" id="dm-id" onclick="DarkMode()">Dark Theme</button></li>
+              </ul>
+          </div>
+          <span class="navTrigger">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+      </div>
+  </nav>
+<div class="docs1"></div>
 
-    </head>
-    <body id="gototop">
-
-        <!-- https://codepen.io/albizan/pen/mMWdWZ -->
-
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="/"><img src="img/sala-musk-logo.png" alt="logo" height="45px"></a><img src="img/vertical-line-white.png" height="45px"><a href="../VIM/"><img src="img/vim-terminal.png" alt="" height="45px"></a>
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                  <li><a href="../VIM/"><span class="scorrimentofigo"><i class="fas fa-home"></i></span></a></li>
-                  <li><a href="docs"><span class="scorrimentofigo">Docs</span></a></li>
-                  <li><a href="resources"><span class="scorrimentofigo">Resources</span></a></li>
-                  <li><a href="../index#aboutus"><span class="scorrimentofigo">About Us</span></a></li>
-                  <li class="font-weight-lighter"><a href="it/docs"><img src="img/bandiera-it.png" alt="" height="30%"> <small>IT</small></a></li>
-                </ul>
-            </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
+<div style="width: 100%; display: flex; flex-direction: row;">
+  <div class="menuscroll">
+      <nav class="scroll-menu" id="scrollmenu">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#introduction">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modes">Vim modes</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3" href="#normal-mode">Normal Mode</a>
+              <a class="nav-link ml-3" href="#insert-mode">Insert Mode</a>
+              <a class="nav-link ml-3" href="#visual-mode">Visual Mode</a>
+              <a class="nav-link ml-3" href="#command-mode">Command Mode</a>
+              <a class="nav-link ml-3" href="#replace-mode">Replace Mode</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#commands">Commands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#vrmc">What's a <span class="text-monospace">.vimrc</span> file?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#practice">Practice</a>
+          </li>
+        </ul>
+      </nav>
+  </div>
+      <div class="sezioni px-3">
+        <div id="introduction"> 
+          <div class="hr"></div>   
+          <h1>Introduction</h1>
+          <p>For starters, Vim is installed pretty much everywhere. I can’t remember ever logging into a system and not being able to use the Vim editor. Most Linux distributions install it by default. With other editors such as nano or Emacs, they may or may not be available. If you’re working on a system and your only editor choice is Vim, then you need to at least be able to use it to make simple edits.<br/>
+          Also, many programs rely on an external editor. By default, in most cases, that external editor is Vim. Typically this can be overridden by setting an environment variable such as EDITOR. However, if you execute one of these commands and find yourself looking at the Vim editor, you’ll be happy to at least know how to make simple edits and exit out of Vim. Just a couple of commands that rely on an external editor such as Vim include crontab, visudo, and git.
+          </p>
+          <h2>How learning VIM improves your productivity</h2>
+          <p>Typing speed is irrelevant up to a certain level. Your ability to navigate through code is much more important. This is where Vim along with its keybindings, layout and set up can help you speed up the process.
+          The skills that you build while learning Vim can be used in many different editors, such as VSCode (with the Vim plugin) or Sublime Text and so on…
+          </p>
         </div>
-    </nav>
+        <div id="modes"> 
+          <div class="hr"></div>
+          <h1>Vim modes</h1>
+          <div id="normal-mode">
+            <h2>Normal Mode</h2>
+            <p>By default, Vim starts in normal mode. Normal mode can be accessed from other modes by pressing <kbd>Esc</kbd>.<br/>
+            Normal mode is where one should spend most of their time while using Vim because in this mode you can navigate in the text with these commands and change blocks of code with other commands.<br/>
+            In normal mode, there are multiple ways to move around in an open file. In addition to using the cursor keys to move around, you can use movement commands as well.<br/>
+            But in the normal mode you can’t insert text with the keyboard because you need to enter in the Insert Mode.</p>
+          </div>
+          <div id="insert-mode">
+            <h2>Insert Mode</h2>
+            <p>This is the second most used mode, and will be the most familiar behavior to most people. Once in insert mode, typing inserts characters just like a regular text editor. You can enter it by using an insert command from normal mode.<br/>
+            To leave insert mode and return to normal mode, press <kbd>Esc</kbd>.</p>
+          </div>
+          <div id="visual-mode">
+            <h2>Visual Mode</h2>
+            <p>Visual mode is used to make selections of text, similar to how clicking and dragging with a mouse behaves but without a mouse. Selecting text allows commands to apply only to the selection, such as copying, deleting, replacing, and so on.<br/>
+            In Visual Mode you can use normal mode commands to edit text and other visual mode specific commands.
+            Press <kbd>v</kbd> to enter visual mode, this will also mark a starting selection point. Move the cursor to the desired end selection point; vim will provide a visual highlight of the text selection.<br/>
+            Visual mode also has the following variants:
+            <ul style="list-style: none;">
+              <li class="py-1"><kbd>V</kbd> to enter <i>visual line mode</i>, this will make text selections by line</li>
+              <li class="py-1"><kbd>Ctrl+V</kbd> to enter <i>visual block mode</i>, this will make text selections by blocks.</li>
+            </ul></p>
+          </div>
+          <div id="command-mode">
+            <h2>Command Mode</h2></li>
+            <p>Command mode has a wide variety of commands and can do things that normal mode can't do as easily. To enter command mode type <kbd>:</kbd> from normal mode and then type your command which should appear at the bottom of the window. For example, to do a global find and replace type: <i>%s/foo/bar/g</i> to replace all <i>foo</i> with <i>bar</i>.</p>
+          </div>
+          <div id="replace-mode">
+            <h2>Replace Mode</h2>
+            <p>Replace mode allows you to replace existing text by directly typing over it. Before entering this mode, get into normal mode and put your cursor on top of the first character that you want to replace. Then press <kbd>R</kbd> to enter replace mode. Now whatever you type will replace the existing text. The cursor automatically moves to the next character just like in insert mode. The only difference is that every character you type will replace the existing one.</p>
+          </div>
+        </div>
+        <div id="commands">         
+          <h1>Commands</h1>
+          <h2>Movement Commands</h2>
+          <ul style="list-style: none;">
+            <li><kbd>j</kbd> = move down;</li>
+            <li><kbd>k</kbd> = move up;</li>
+            <li><kbd>l</kbd> = move right;</li>
+            <li><kbd>h</kbd> = move left;</li>
+            <li><kbd>:<var>N</var>j</kbd> takes you up <var>N</var> lines</li>
+            <li>You can also use the above command with <kbd>k</kbd>, <kbd>l</kbd>, <kbd>h</kbd>.</li>
+            <li>You can also move with the arrow keys.</li>
+            <li><kbd>gg</kbd> = move to the first line of the file;</li>
+            <li><kbd>G</kbd> = move to the last line of the file;</li>
+            <li><kbd>:<var>N</var></kbd> takes you to the line <var>N</var> (example <i>:5</i> takes you to line 5)</li>
+            <li><kbd>H</kbd> = top line on screen;</li>
+            <li><kbd>M</kbd> = middle line on screen;</li>
+            <li><kbd>L</kbd> = bottom line on screen;</li>
+            <li><kbd>e</kbd> = the end of the current word;</li>
+            <li><kbd>b</kbd> = beginning of current word;</li>
+            <li><kbd>w</kbd> = beginning of next word;</li>
+            <li><kbd>0</kbd> = beginning of current line;</li>
+            <li><kbd>&#94;</kbd> = first non-whitespace character of current line;</li>
+            <li><kbd>&#36;</kbd> = end of current line;</li>
+            <li><kbd>&#37;</kbd> = move to matching parenthesis, bracket or brace;</li>
+          </ul>
+          <h2>Utility Commands</h2>
+          <ul style="list-style: none;">
+            <li><kbd>I</kbd> = insert at the first non-whitespaced character of the line;</li>
+            <li><kbd>a</kbd> = insert after current character;</li>
+            <li><kbd>o</kbd> = insert a line under the current one and enters insert mode;</li>
+            <li><kbd>O</kbd> = insert a line above the current one and enters insert mode;</li>
+            <li><kbd>r</kbd> = overwrite the current character and enters command mode;</li>
+            <li><kbd>U</kbd> = undo;</li>
+            <li><kbd>Ctrl+R</kbd> = redo;</li>
+          </ul>
+          <h2>Commands for opening, closing and saving files</h2>
+          <ul style="list-style: none;">
+            <li><kbd>:w</kbd> = save the current file;</li>
+            <li><kbd>:wq</kbd> = save the current file and close it;</li>
+            <li><kbd>:w <var>newname</var></kbd> = save a copy of the current file as newname, but continue editing the original file;</li>
+            <li><kbd>:sav <var>newname</var></kbd> = save a copy of the current file as newname, and edit the file <var>newname</var>;</li>
+            <li><kbd>:q!</kbd> = close a file without saving;</li>
+          </ul>
+          <h2>Changing mode Commands</h2>
+          <ul style="list-style: none;">
+            <li><kbd>esc+esc</kbd> = return to normal mode from command or visual mode</li>
+            <li><kbd>esc</kbd> = return to normal mode from insert or replace mode</li>
+            <li><kbd>i</kbd> = insert before current character;</li>
+            <li><kbd>:</kbd> = enters command mode;</li>
+            <li><kbd>R</kbd> = enters replace mode;</li>
+            <li><kbd>v</kbd> = enters visual mode all along the line;</li>
+            <li><kbd>V</kbd> = enters visual mode from the cursor;</li>
+          </ul>
+          <h2>Commands for copy and pasting</h2>
+          <ul style="list-style: none;">
+            <li><kbd>y</kbd> = copy the entirely line;</li>
+            <li><kbd>c</kbd> = cut and enters insert mode;</li>
+            <li><kbd>C</kbd> = cut the rest of the current line and enters insert mode;</li>
+            <li><kbd>d</kbd> = cut but remains normal mode;</li>
+            <li><kbd>D</kbd> = cut the rest of the current line;</li>
+            <li><kbd>p</kbd> = paste in the line after the cursor;</li>
+            <li><kbd>P</kbd> = paste in the line before the cursor;</li>
+            <li><kbd>x</kbd> = delete a character after the cursor;</li>
+            <li><kbd>X</kbd> = delete a character before the cursor;</li>
+          </ul>
+          <h2>How to create and use macros</h2>
+          <ol>
+            <li>Enter command mode and press <kbd>q</kbd></li>
+            <li>Press any key you want the macro to be assigned to</li>
+            <li>Press any key you want the macro to reproduce</li>
+            <li>Press <kbd>q</kbd> and the key you assigned the macro to, to stop the macro</li>
+            <li>Press <kbd>&#64;</kbd> and <kbd>shift+<var>macro-key</var></kbd> to start the macro</li>
+          </ol>
+        </div>
+        <div id="vrmc" class="pb-4">  
+          <div class="hr"></div>       
+          <h1>What's a <span class="text-monospace">.vimrc</span> file? <span class="text-muted"><span style="font-size: 0.8em;">&gt;</span><a href="https://github.com/amix/vimrc" style="color: gray;">GitHub</a></span></h1>
+          <p>Vim allows for really awesome customization, typically stored inside a <span class="text-monospace">.vrmc</span> file. Typical features for a programmer would be syntax highlighting, smart indenting and so on. In this file you can also save your macros.</p>
+          <h2>Basic version <span class="text-muted"><span style="font-size: 0.8em;">&gt;</span><a href="https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim" style="color: gray;">Github</a></span></h2>
+          <p>This version of the <span class="text-monospace">.vimrc</span> file already has basic plugins stored in it.</p>
+          <h2>Awesome Version <span class="text-muted"><span style="font-size: 0.8em;">&gt;</span><a href="https://github.com/amix/vimrc" style="color: gray;">Github</a></span></h2>
+          <p>This version of the file <span class="text-monospace">.vimrc</span> includes a ton of useful plugins, color schemes, and configurations.</p>
+          <h2>Example of plugins <span class="text-muted"><span style="font-size: 0.8em;">&gt;</span><a href="https://github.com/amix/vimrc" style="color: gray;"><span style="font-size: 0.9em;">example 1</span></a></span> <span class="text-muted"><span style="font-size: 0.8em;">&gt;</span><span style="font-size: 0.9em;"><a href="https://github.com/amix/vimrc" style="color: gray;">example 2</a></span></span></h2>
+          <ul>
+            <li><i>vim-commentary</i> is a plugin that allows you to comment stuff out.</li>
+            <li><i>vim-indent-objects</i> is a plugin that allows you to define a new text object representing lines of code at the same indent level. Useful for python/vim scripts.</li>
+            <li><i>vim-indent-guides</i> is a plugin for visually displaying indent levels in Vim.</li>
+            <li><i>AutoClose</i> is a plugin that inserts matching brackets, paren, brace or quotes.</li>
+            <li><i>YankRing</i> is a plugin that maintains a history of previous yanks, changes and deletes.</li>
+            <li><i>ack.vim</i> is a plugin that runs ack (a better grep) from vim, and shows the results in a split window.</li>
+          </ul>
+        </div>
+        <div id="practice">
+        <div class="hr"></div>
+        <h1>Practive with VIM commands</h1>
+        <div id="no-desktop">
+          
+          <a href="live-editor/openvim/tutorial">
+            <div class="mobile-card-3">
+              <div class="mobile-card-detail">
+                <p class="mobile-card-title p-4">Practice</p>
+                <p><center><span class="mobile-card-desc">Practice with VIM commands</span></center></p>
+              </div>
+              <span class="mobile-back-text">
+                Practice
+              </span>
+            </div>
+          </a>
+
+          <div class="py-3"></div>
+          
+          <a href="game">
+            <div class="mobile-card-4">
+              <div class="mobile-card-detail">
+                <p class="mobile-card-title p-4">Game</p>
+                <p><center><span class="mobile-card-desc">Practice with VIM Adventures</span></center></p>
+              </div>
+              <span class="mobile-back-text">
+                Game
+              </span>
+            </div>
+          </a>
+
+          <div class="py-3"></div>
+        </div>
 
 
+        <div id="no-mobile" style="margin-bottom: 100px;">
 
+          <div class="canvas-wrapper m-5">
 
+          <a href="live-editor/openvim/tutorial" class="canvas" style="text-decoration: none;">
+            <div class="canvas_border">
+              <svg>
+                <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+              </svg>
+            </div>
+            <div class="canvas_img-wrapper">
+              <img src="img/console.png" class="img-fluid" style="width: 50%; height: auto;">
+            </div>
+            <div class="canvas_copy canvas_copy--left">
+              <span class="canvas_copy_subtitle">VIM</span>
+              <strong class="canvas_copy_title">Practice</strong>
+              <span class="canvas_copy_details">Practice with VIM commands</span>
+            </div>
+          </a>
 
+          <div class="mx-5"></div>
+
+          <a href="game" class="canvas" style="text-decoration: none;">
+            <div class="canvas_border">
+              <svg>
+                <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+              </svg>
+            </div>
+            <div class="canvas_img-wrapper">
+              <img src="img/controller.png" class="img-fluid" style="width: 50%; height: auto;">
+            </div>
+            <div class="canvas_copy canvas_copy--left">
+              <span class="canvas_copy_subtitle">VIM</span>
+              <strong class="canvas_copy_title">Game</strong>
+              <span class="canvas_copy_details">Practice with VIM Adventures</span>
+            </div>
+          </a>
+          <!--
+          <div class="mx-5"></div>
+
+          <a href="game/" class="canvas" style="text-decoration: none;">
+            <div class="canvas_border">
+              <svg>
+                <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(1, 152, 51);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+              </svg>
+            </div>
+            <div class="canvas_img-wrapper">
+              <img src="img/controller.png" class="img-fluid" style="width: 50%; height: auto;">
+            </div>
+            <div class="canvas_copy canvas_copy--left">
+              <span class="canvas_copy_subtitle">VIM</span>
+              <strong class="canvas_copy_title">Game</strong>
+              <span class="canvas_copy_details">!</span>
+            </div>
+          </a>
+          -->
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
 
 <!-- Footer -->
 <footer class="text-center text-white custom-footer-1" style="font-size: 1rem !important;">
@@ -119,7 +382,7 @@
           </div>
           <div class="col-lg-6">
             <div class="flex-centro-100100 p-4">
-              Sala Musk is a no-profit organization created by 6 students of the 3CI-IN of the ITIS "Enrico Fermi" MN. Started on 27/10/2021, our mission is to build an Open Source learning world.
+              Sala Musk is a no-profit organization created by 6 students of the 3CI&nbsp;IN of the ITIS "Enrico Fermi" MN. Started on 27/10/2021, our mission is to build an Open Source learning world.
             </div>
           </div>
         </div>
@@ -129,7 +392,7 @@
     </div>
   
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.3);">
-      &copy; 2021 <span style="font-weight: 700;">3CI IN Organization</span> for education. <span class="text-muted">Open Source project.</span></a>
+      <span style="font-weight: 700;">3CI IN Organization</span> for education. <span class="text-muted">Open Source Project &copy; CC BY-NC 2021 Sala Musk.</span></a>
     </div>
   
   </footer>
@@ -157,15 +420,28 @@
   
       <!-- Jquery needed -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+      <script>
+        // basically the same thing above but detecting hover functionality
+        if(window.matchMedia('(hover: hover)').matches){
+          var nodesktop = document.getElementById('no-desktop');
+          nodesktop.style.display = 'none';
+        }else{
+          document.getElementById('no-mobile').style.display = 'none';
+          $('.docs1').css("background-size" , "contain");
+          $('.docs1').css("height" , "40vh");
+          $('.menuscroll').hide();
+          $('.sezioni').css("width" , "100%");
+        }
+      </script>
     
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
       <script>
         $(window).scroll(function() {
           if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-              console.log("OK");
+            $('.custom_nav').addClass('affix');
             } else {
-            $('.nav').removeClass('affix');
+            $('.custom_nav').removeClass('affix');
           }
         });
       </script>
@@ -173,12 +449,92 @@
         <script>
           $('.navTrigger').click(function () {
         $(this).toggleClass('active');
-        console.log("Clicked menu");
         $("#mainListDiv").toggleClass("show_list");
         $("#mainListDiv").fadeIn();
     
         });
     
         </script>
+        
+        <script>
+          window.addEventListener("scroll", function() {
+            if (window.scrollY > (document.getElementById("introduction").offsetTop - 70)) {
+              //$('.menuscroll').removeClass('scroll-menu');
+              //$('.menuscroll').addClass('fixed');
+              $('.scroll-menu').addClass('pt-70px-1');
+            }else{
+              $('.scroll-menu').removeClass('pt-70px-1');
+            }
+          });
+        </script>
+        
+        <script>
+          // Select the button
+          const btn = document.querySelector(".dark-mode-btn");
+    
+          // Select the theme preference from localStorage
+          const currentTheme = localStorage.getItem("theme");
+    
+          // If the current theme in localStorage is "dark"...
+          if (currentTheme == "dark") {
+            // ...then use the .dark-theme class
+            document.body.classList.add("dark-mode");
+            $(".custom-footer-1").addClass('custom-dark-footer-1');
+            $(".custom-version-bar").addClass('custom-dark-version-bar');
+            $(".canvas_img-wrapper").addClass('canvas_img-wrapper-dark');
+            $(".canvas_copy_title").addClass('text-white');
+            document.getElementById("dm-id").innerHTML = "Light Theme";
+          }
+    
+          // Listen for a click on the button 
+          btn.addEventListener("click", function () {
+            // Toggle the .dark-theme class on each click
+            document.body.classList.toggle("dark-mode");
+            $(".custom-footer-1").toggleClass('custom-dark-footer-1');
+            $(".custom-version-bar").toggleClass('custom-dark-version-bar');
+            $(".canvas_img-wrapper").toggleClass('canvas_img-wrapper-dark');
+            $(".canvas_copy_title").toggleClass('text-white');
+    
+            // Let's say the theme is equal to light
+            let theme = "light";
+            // If the body contains the .dark-theme class...
+            if (document.body.classList.contains("dark-mode")) {
+              // ...then let's make the theme dark
+              theme = "dark";
+            }
+            // Then save the choice in localStorage
+            localStorage.setItem("theme", theme);
+          });
+    
+    
+          function DarkMode() {
+              if (document.getElementById("dm-id").innerHTML === "Dark Theme") {
+                document.getElementById("dm-id").innerHTML = "Light Theme";
+              } else {
+                document.getElementById("dm-id").innerHTML = "Dark Theme";
+              }
+          }
+        </script>
+<!--      move up a bit to prevent navbar to hide text, lil bugged
+        <script>
+          // The function actually applying the offset
+          function offsetAnchor() {
+            if (location.hash.length !== 0) {
+              window.scrollTo(window.scrollX, window.scrollY - 70);
+            }
+          }
+          // Captures click events of all <a> elements with href starting with #
+            $(document).on('click', 'a[href^="#"]', function(event) {
+              // Click events are captured before hashchanges. Timeout
+              // causes offsetAnchor to be called after the page jump.
+              window.setTimeout(function() {
+                offsetAnchor();
+              }, 0);
+            });
+
+            // Set the offset when entering page with hash present in the url
+            window.setTimeout(offsetAnchor, 0);
+        </script>
+      -->
       </body>
   </html>
