@@ -73,6 +73,25 @@
     transition: all 0.4s ease;
 }
 
+/* scorrimento sotto le scritte figo */
+.scorrimentofigo {
+    position: relative;
+    text-decoration: none;
+  }
+  .scorrimentofigo:after {
+    content: "";
+    height: 1px;
+    bottom: -4px;
+    position: absolute;
+    left: 5%;
+    right: 95%;
+    background: #eeeeee;
+    transition: right 0.25s ease-in-out;
+  }
+  .scorrimentofigo:hover:after {
+    right: 5%;
+  }
+
 
 /* Media query section */
 
